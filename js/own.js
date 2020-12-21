@@ -52,7 +52,7 @@ $(function()
 
                     $.ajax({
                 type: "POST",
-                url:"https://script.google.com/macros/s/AKfycbwxm_fFVcEM0QGVpDsxDsEB4DaIJtm0oiWirClI/exec",
+                url:"https://script.google.com/macros/s/AKfycbw_hzXrBrn_5Vettg4vonogZ6zCeDt9fDKcP_jy7w/exec",
                 data: $form.serialize(),
                 success: after_form_submitted,
                 dataType: 'json' 
