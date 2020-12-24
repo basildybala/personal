@@ -323,13 +323,13 @@ padding: 2rem;
 
 .btn-box {
     display: flex;
-
+    justify-content: center;
     margin: 5px -5px 0 -5px;}
 .btn-box  a {
     color: #FFF;
     text-decoration: none;
     text-align: center;
-    width: 165px;
+    width: 100%;
     font-family:'Goldman',cursive;
     font-size: 15px;
     margin: 5px;
@@ -586,4 +586,15 @@ ul.social_icon li a:hover {
     width: 20px;
     height: auto;
     margin-right: 12px;
+  }
+  #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .card-img-top{
+      overflow: hidden;
+  }
+  .card-img-top:hover{
+      transform: scale(1.3);
   }
