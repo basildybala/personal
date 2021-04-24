@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=PT+Sans+Narrow&family=Varela+Round&display=swap');
+
 body{
     margin: 0;
     padding: 0;
@@ -8,7 +10,7 @@ body{
 .main-header{
     background-color: white;
     width: 100%;
-    height: 64px;
+    height: 70px;
     display: flex;
     /* padding: 15px 18px; */
     color: #1c1b1b;
@@ -18,7 +20,7 @@ body{
     justify-content: space-evenly;
 }
 .header-image img{
-    height: 63px ;
+    height: 65px ;
 }
 .header-image{
     display: flex;
@@ -67,11 +69,12 @@ body{
     background: white;
 }
 .search-box1 button{
-    width: 13%;
+    width: 16%;
     height: 30px;
     background: black;
+    border-radius: 10px;
     color: white;
-    font-family: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;cursor: pointer;
 }
 .search-box1 button:hover{
@@ -88,7 +91,11 @@ body{
     color: white;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 15px;
+    padding: 5px;
+}
+.black-header i {
+    margin-right: 5px;
 }
 
 
@@ -98,6 +105,7 @@ body{
     stroke-width: 5px;
     stroke-opacity: 13%;
     border: rgb(209, 207, 207) solid;
+    
   }
   .up-list1{
     text-decoration: none;
@@ -105,9 +113,82 @@ body{
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      background-color:  #E6E6E6;
+      padding: 1px;
+      border-radius: 5px;
+      height: 209px;
   }
   .up-list img{
     width: 100px;
     height: 133px;
     display: block;
   }
+  .table-upcoming-list{
+      margin: auto;
+      background-color: white;
+  }
+  
+  .upcmng-movie-header{
+      
+      
+      color: rgb(19, 18, 18);
+      width:100%;
+      text-align: center;
+      height: 25px;
+     
+    
+  }
+  .upcmng-movie-header h3{
+    font-size: 14px;
+    margin: 0;
+    font-family: cursive;
+    font-weight: 800;
+}
+.uplist-det{
+    color: rgb(252, 54, 19);
+    font-size: 12px;
+    margin: 2px 1px;
+    width: 100%;
+    margin: 0;
+   
+}
+.uplist-det i{
+    color: black;
+    font-size: 15px;
+    margin: 1px 2px;
+  
+}
+.uplist2{
+    display: flex;
+}
+.up-list p{
+    color: black;
+    margin: 1px;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+
+}
+.uplist2 h4{
+    margin: 2px;
+    font-family: 'Varela Round', sans-serif;
+
+}
+.white-link{
+    height: 30px;
+    width: 100%;
+    border-bottom: 1px solid black
+    
+    
+}
+
+.dflexx{
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;    
+}
+.dflexx i{
+    color: rgb(252, 54, 19);
+}
