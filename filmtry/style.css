@@ -101,10 +101,11 @@ body{
 
 .up-list{
     padding: 10px 5px;
-    background-color: #F5F5F5;
+    background-color: #ffffff;
     stroke-width: 5px;
     stroke-opacity: 13%;
     border: rgb(209, 207, 207) solid;
+    
     
   }
   .up-list1{
@@ -117,6 +118,7 @@ body{
       padding: 1px;
       border-radius: 5px;
       height: 209px;
+      
   }
   .up-list img{
     width: 100px;
@@ -141,7 +143,7 @@ body{
   .upcmng-movie-header h3{
     font-size: 14px;
     margin: 0;
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
 }
 .uplist-det{
@@ -191,4 +193,28 @@ body{
 }
 .dflexx i{
     color: rgb(252, 54, 19);
+}
+
+/*Movie section*/
+.black-headerr{
+    background-color: rgb(24, 20, 20);
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 3px;
+}
+.movie-poster{
+    background-color: #E6E6E6;
+    width: 100%;
+}
+.movie-poster img{
+    width: 75%;
+    max-height: min-content;
+    float: left;
 }
