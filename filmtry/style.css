@@ -222,9 +222,8 @@ body{
     
 }
 
-.cast-section{
-    background-color: white;
-}
+
+
 .cast-header{
     font-size: 16px;
     font-weight: 800;
@@ -238,29 +237,24 @@ body{
 }
 .cast-box1 img{
    margin: 5px;
-   width: 85px;
-   height: 85px;
-    border-radius: 5px;
+   width: 90px;
+   height: 90px;
+    border-radius: 10%;
 }
 .cast{
     display: flex;
     border-bottom: rgb(209, 207, 207) solid;
 }
 .actor-head{
-    width: 85px;
     font-size: 12px;
-    background-color: black;
-    color: white;
-    height: 28px;
+    color: rgb(5, 5, 5);
+    width: 90px;
     margin: 5px;
     font-family: sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: 500;
-    position: absolute;
-    
-    bottom: 1px;
+    font-weight: 700;
 }
 /*Movie info*/
 .info-head{
@@ -271,25 +265,34 @@ body{
     display: flex;
     margin: 5px;
     background-color: #E6E6E6;
-    height: 26px;
-    width: 110px;
+    height: 28px;
+    width: 117px;
     font-weight: bold;
     align-items: center;
     justify-content: center;
 }
 .yt-trailer img{
-    width: 25px;
+    width: 20px;
+}
+a{
+    text-decoration: none;
 }
 .yt-trailer{
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 1px;
-    background-color: blue;
+    background-color: black;
     color: white;
-    font-weight: 700;
+    font-weight: 500;
     border: 1px solid black;
     border-radius: 5px;
-    margin-right: 100px;
+    margin-right: 65px;
+    font-size: 13px;
+    height: 22px;
+    width: 105px;
+    font-family: 'Varela Round';
+    margin-top: 5px;
     
 }
 .mv-details{
@@ -308,16 +311,36 @@ body{
     font-family: 'Varela Round', sans-serif;
     margin: 5px;
 }
+.movie-details{
+    display: flex;
+    flex-direction: column;
+    border-bottom: rgb(209, 207, 207) solid;
+}
+.mv-detailss{
+    display: flex;
+}
+.mv-detailss h4{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px;
+    font-family: sans-serif;
+}
+.mv-detailss h5{
+    font-size: 13px;
+    color: rgb(252, 54, 19);
+    font-family: 'Varela Round', sans-serif;
+    margin: 5px
+}
 
 @media(min-width: 767px){
     .movie-poster img{
-        width: 55%;
+        width: 35%;
         max-height: min-content;
-        height: 800px;
+        height: 600px;
         
     }
     .info-head{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: flex-start;
     }
 }
