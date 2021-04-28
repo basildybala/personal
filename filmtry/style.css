@@ -231,7 +231,9 @@ body{
     padding: 2px 5px;
     border-bottom: rgb(209, 207, 207) solid;
     display: flex;
+    margin-right: 5px
 }
+
 .cast-box1{
     position: relative;
 }
@@ -315,6 +317,7 @@ a{
     display: flex;
     flex-direction: column;
     border-bottom: rgb(209, 207, 207) solid;
+    
 }
 .mv-detailss{
     display: flex;
@@ -330,6 +333,40 @@ a{
     color: rgb(252, 54, 19);
     font-family: 'Varela Round', sans-serif;
     margin: 5px
+    
+}
+
+
+.video-yt h4{
+    position: relative;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: sans-serif;
+    margin: 0;
+}
+.video-yt{
+    background-color: white;
+    height: 150px;
+    border-bottom: rgb(209, 207, 207) solid;
+}
+.movies-header-h4{
+    display: flex;
+
+}
+.movies-header-h4 i{
+    color: rgb(46, 38, 38);
+}
+.movies-header-h4::after {
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 4px;
+    background-color: #000;
+    left: 0px;
+    right: 0px;
+    margin-top: px;
+    bottom: 0px;
+    border-radius: 100px;
 }
 
 @media(min-width: 767px){
