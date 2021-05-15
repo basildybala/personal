@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,16 +21,112 @@
       <div class="head1">
           <p>Length</p>
           <p>Lang</p>
-          <p>Rating</p>
-          <p>Review</p>
+          <p>Genre</p>
+          <!-- <p>Review</p> -->
           
       </div>
       <div class="head2">
         <p>1:37</p>
-        <p>Eng</p>
-        <p>4.4</p>
-        <p>45+</p>
+        <p>Hollywood</p>
+        <p>Action|Romance</p>
+        <!-- <p>45+</p> -->
+      </div>
+      <!----------------Actors-->
+      <div class="basic-head"><h4>Actors</h4> </div>
+      <div class="actor-section">  
+         
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"> <div class="actor"><a href="#">
+                    <img src="filmtry/image/tovino.jpg" alt="" srcset="">
+                    <p>Tovino Thomas</p>
+                </a></div></div>
+                <div class="swiper-slide"><div class="actor"><a href="#">
+                    <img src="filmtry/image/tovino.jpg" alt="" srcset="">
+                    <p>Tovino Thomas</p>
+                </a></div></div>
+                <div class="swiper-slide"><div class="actor"><a href="#">
+                    <img src="filmtry/image/tovino.jpg" alt="" srcset="">
+                    <p>Tovino Thomas</p>
+                </a></div></div>
+                <div class="swiper-slide"><div class="actor"><a href="#">
+                    <img src="filmtry/image/tovino.jpg" alt="" srcset="">
+                    <p>Tovino Thomas</p>
+                </a></div></div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                
+            </div>
+    
+         
+        </div>
+    </div>  
+    <div class="mv-details-section">
+        <div class="head1">
+            <p>Release</p>
+            <p>Director</p>
+            <p>Produced</p>
+            <!-- <p>Review</p> -->
+            
+        </div>
+        <div class="head2">
+          <p>2019</p>
+          <p>Ashiqu]</p>
+          <p>Ashiqu Abu</p>
+          <!-- <p>45+</p> -->
+        </div>
+      <div class="story">
+          <div class="story-h"><p>Story :</p></div>
+          <div class="story-p"><p>good Film  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p></div>
       </div>
   </div>  
+
+
+
+
+
+   
+<!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
+
+<script>
+ $(document).ready(function() {
+// Swiper: Slider
+    new Swiper('.swiper-container', {
+        loop: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 3,
+        paginationClickable: true,
+        spaceBetween: 20,
+        breakpoints: {
+            1920: {
+                slidesPerView: 10,
+                spaceBetween: 30
+            },
+            1028: {
+                slidesPerView: 10,
+                spaceBetween: 30
+            },
+            480: {
+                slidesPerView: 4,
+                spaceBetween: 10
+            },
+            380: {
+                slidesPerView: 4,
+                spaceBetween: 10
+            }
+        }
+    });
+});
+
+</script>
+ 
 </body>
 </html>
