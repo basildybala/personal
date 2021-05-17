@@ -191,3 +191,46 @@ body{
         
     
 }
+.movie-mega-card{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+  }
+  .movie-mega-card a{
+    text-decoration: none;
+  }
+  .movie-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+    margin:14px; 
+    width: 160px;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+  }
+  .movie-card img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 12rem;
+     width: 100%;
+  }
+  .movie-card-title{
+    text-align: center;
+    font-family: sans-serif;
+      font-weight: 700;
+      font-size: 0.8em;
+      color: rgb(235, 0, 0);
+  }
+  .movie-card-info{
+    font-size: 0.7em;
+    text-align: center;
+    margin-top: 9px;
+  }
+  .card-body{
+    margin-top: 5px;
+    height: 30px;
+  }
