@@ -1,0 +1,95 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+            <title>Document</title>
+        </head>
+        <body>
+            <style>
+                .movie-video{
+                    
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                }
+                .embed-class{
+                    width: 80%;
+                }
+                
+    }
+            </style>
+
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="movie-video">
+            
+            
+                    <embed class="embed-class"  src="https://www.youtube.com/embed/-IJuKT1mHO8" type="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="movie-video">
+                <embed class="embed-class"  src="https://www.youtube.com/embed/-IJuKT1mHO8" type="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="movie-video">
+                <embed class="embed-class"  src="https://www.youtube.com/embed/-IJuKT1mHO8" type="">
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="movie-video">
+            <embed class="embed-class"  src="https://www.youtube.com/embed/44LdLqgOpjo" type="">
+            </div>
+        </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>  
+
+            <script>
+        const swiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView:2,
+        
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+            </script>
+        </body>
+        </html>
