@@ -17,10 +17,17 @@
       <div class="movie-img">
         <img src="img/m.jpg" class="backimg" alt="" />
         <img src="img/mm.jpg" class="movie-cover" alt="" />
-        <a href="#">
+
+        <a href="#" class="trailor-btn">
         <div class="fa-trailor"> <p> Watch Trailor</p></div>
         <i class="fa fa-play"><p>play_circle_filled </p></i></a>
+        <div class="video-container">
+          <span class="close"> &#10006; </span>
+          
+          <iframe  src="https://www.youtube.com/embed/44LdLqgOpjo" frameborder="0" allow="autoplay" allowfullscreen></iframe>
       </div>
+      </div>
+      {{movie.yttrailorlink}}
       <h6>Wonder Women</h6>
       <img
         src="http://www.pngmart.com/files/7/Rating-Star-PNG-Photos.png"
@@ -269,6 +276,96 @@
       </a>
     </div> -->
 
+    <div class="movies-section">
+      
+        <a href="#" class="movies-list">
+          <div class="movies-img">
+            <img src="m.jpg" alt="" srcset="">
+          </div>
+        <div class="movies-body">
+          <p>Mayanadhi</p>
+        </div>  
+        
+        </a>
+
+        <a href="#" class="movies-list">
+          <div class="movies-img">
+            <img src="mm.jpg" alt="" srcset="">
+          </div>
+        <div class="movies-body">
+          <p>Mayanadhi</p>
+        </div>  
+        
+        </a>
+        <a href="#" class="movies-list">
+          <div class="movies-img">
+            <img src="mmm.jpg" alt="" srcset="">
+          </div>
+        <div class="movies-body">
+          <p>Mayanadhi</p>
+        </div>  
+        
+        </a>
+        <a href="#" class="movies-list">
+          <div class="movies-img">
+            <img src="mmm.jpg" alt="" srcset="">
+          </div>
+        <div class="movies-body">
+          <p>Mayanadhi</p>
+        </div>  
+        
+        </a>
+        <a href="#" class="movies-list">
+          <div class="movies-img">
+            <img src="mm.jpg" alt="" srcset="">
+          </div>
+        <div class="movies-body">
+          <p>Mayanadhi</p>
+        </div>  
+        
+        </a>
+        <a href="#" class="movies-list">
+          <div class="movies-img">
+            <img src="m.jpg" alt="" srcset="">
+          </div>
+        <div class="movies-body">
+          <p>Mayanadhi</p>
+        </div>  
+        
+        </a>
+        <a href="#" class="movies-list">
+          <div class="movies-img">
+            <img src="mm.jpg" alt="" srcset="">
+          </div>
+        <div class="movies-body">
+          <p>Mayanadhid and Kutappppan and Fanu ads olds</p>
+        </div>  
+        
+        </a>
+     
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="basic-head"><h4>Video</h4> </div>
       
       <div class="image-section">
@@ -302,73 +399,77 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/jquery-2.1.4.min.js"></script>
 
-    <script>
-      $(document).ready(function () {
-        // Swiper: Slider
-        new Swiper(".swiper-container", {
-          loop: true,
-        //   nextButton: ".swiper-button-next",
-        //   prevButton: ".swiper-button-prev",
-          slidesPerView: 4,
-          paginationClickable: true,
-          spaceBetween: 10,
-          breakpoints: {
-            1920: {
-              slidesPerView: 10,
-              spaceBetween: 30,
-            },
-            1028: {
-              slidesPerView: 10,
-              spaceBetween: 30,
-            },
-            480: {
-              slidesPerView: ,
-              spaceBetween: 10,
-            },
-            // 380: {
-            //   slidesPerView: 4,
-            //   spaceBetween: 10,
-            // },
-          },
-        });
-      });
-      $(document).ready(function () {
-        // Swiper: Slider
-        new Swiper(".swiper-containerr", {
-          loop: true,
-        //   nextButton: ".swiper-button-next",
-        //   prevButton: ".swiper-button-prev",
-          slidesPerView: 3,
-          paginationClickable: true,
-          spaceBetween: 20,
-          breakpoints: {
-            1920: {
-              slidesPerView: 10,
-              spaceBetween: 30,
-            },
-            1028: {
-              slidesPerView: 10,
-              spaceBetween: 30,
-            },
-            480: {
-              slidesPerView: 4,
-              spaceBetween: 10,
-            },
-            380: {
-              slidesPerView: 4,
-              spaceBetween: 10 ,
-            },
-          },
-        });
-      });
-      $("readmore-btn").on("click", function () {
-        $(this).parent().toggleClass("showContent");
+ <script>
 
-        var replaceText = $(this).parent().hasClass("showContent")
-          ? "Read Less"
-          : "Read More";
-        $(this).text(replaceText);
-      });
-    </script>
+    const btn =document.querySelector('.trailor-btn');
+const videoContainer=document.querySelector('.video-container');
+const close =document.querySelector('.close');
+
+
+btn.addEventListener('click',()=>{
+    videoContainer.classList.add('show')
+})
+close.addEventListener('click',()=>{
+    videoContainer.classList.remove('show')
+})
+
+</script>
+
+      <!-- // $(document).ready(function () {
+       
+      //   new Swiper(".swiper-container", {
+      //     loop: true,
+        
+      //     slidesPerView: 4,
+      //     paginationClickable: true,
+      //     spaceBetween: 10,
+      //     breakpoints: {
+      //       1920: {
+      //         slidesPerView: 10,
+      //         spaceBetween: 30,
+      //       },
+      //       1028: {
+      //         slidesPerView: 10,
+      //         spaceBetween: 30,
+      //       },
+      //       480: {
+      //         slidesPerView: ,
+      //         spaceBetween: 10,
+      //       },
+            
+      //     },
+      //   });
+      // });
+      // $(document).ready(function () {
+      //   // Swiper: Slider
+      //   new Swiper(".swiper-containerr", {
+      //     loop: true,
+      //   //   nextButton: ".swiper-button-next",
+      //   //   prevButton: ".swiper-button-prev",
+      //     slidesPerView: 3,
+      //     paginationClickable: true,
+      //     spaceBetween: 20,
+      //     breakpoints: {
+      //       1920: {
+      //         slidesPerView: 10,
+      //         spaceBetween: 30,
+      //       },
+      //       1028: {
+      //         slidesPerView: 10,
+      //         spaceBetween: 30,
+      //       },
+      //       480: {
+      //         slidesPerView: 4,
+      //         spaceBetween: 10,
+      //       },
+      //       380: {
+      //         slidesPerView: 4,
+      //         spaceBetween: 10 ,
+      //       },
+      //     },
+      //   });
+      // });
+     -->
+    
   </body>
 </html>

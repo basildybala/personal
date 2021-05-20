@@ -5,6 +5,7 @@
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
             <title>Document</title>
         </head>
         <body>
@@ -20,11 +21,57 @@
                 .embed-class{
                     width: 80%;
                 }
-                
-    }
+                .video-container{
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 400px;
+                    z-index: 99999;
+                    background-color: rgba(255, 122, 0,0.1);
+                    display: flex;
+                    justify-content: center;
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: all 0.3 ;
+
+                }
+                .video-container .close{
+                    position: absolute;
+                    top: 10%;
+                    right: 25px;
+                    font-size: 20px;
+                    cursor: pointer;
+
+                }
             </style>
 
-        <!-- Slider main container -->
+
+
+<div class="modal">
+    <a href="#" class="btn">Watch Video</a>
+    <div class="video-container">
+        <span class="close"> &#10006;</span>
+        <iframe  src="https://www.youtube.com/embed/-IJuKT1mHO8 frameborder="0" allow="autoplay"  allowfullscreen></iframe>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Slider main container
         <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
@@ -33,22 +80,25 @@
                 <div class="movie-video">
             
             
-                    <embed class="embed-class"  src="https://www.youtube.com/embed/-IJuKT1mHO8" type="">
+                    <iframe  src="https://www.youtube.com/embed/-IJuKT1mHO8 frameborder="0" allow="autoplay"  allowfullscreen></iframe>
+
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="movie-video">
-                <embed class="embed-class"  src="https://www.youtube.com/embed/-IJuKT1mHO8" type="">
+                    <iframe  src="https://www.youtube.com/embed/-IJuKT1mHO8" frameborder="0" allow="autoplay" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="movie-video">
-                <embed class="embed-class"  src="https://www.youtube.com/embed/-IJuKT1mHO8" type="">
+                    <iframe  src="https://www.youtube.com/embed/44LdLqgOpjo" frameborder="0" allow="autoplay" allowfullscreen></iframe>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="movie-video">
-            <embed class="embed-class"  src="https://www.youtube.com/embed/44LdLqgOpjo" type="">
+                    <iframe  src="https://www.youtube.com/embed/44LdLqgOpjo" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+
+            
             </div>
         </div>
                 ...
@@ -62,12 +112,28 @@
         
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
-        </div>
-
+        </>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js" integrity="sha512-+m6t3R87+6LdtYiCzRhC5+E0l4VQ9qIT1H9+t1wmHkMJvvUQNI5MKKb7b08WL4Kgp9K0IBgHDSLCRJk05cFUYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
             <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>  
 
             <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         const swiper = new Swiper('.swiper-container', {
         // Optional parameters
         direction: 'horizontal',
