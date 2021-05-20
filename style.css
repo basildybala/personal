@@ -302,15 +302,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100px;
-    margin: 9px 6px;
-    height: 160px;
+    width: 115px;
+    margin: 9px 3px;
+    height: 165px;
     background-color: #1c1c1cdb;
     
 }
 .movies-img img{
     width: 100%;
-    height:130px ;
+    height:135px ;
 }
 .movies-body{
     white-space: nowrap;
