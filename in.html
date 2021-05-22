@@ -9,7 +9,7 @@
 </head>
 <body>
   
-<!-- <div class="container">
+<div class="container">
   <ul class="lazy-img">
     <li>
       <img src="m.jpg" alt="">
@@ -33,7 +33,7 @@
       <img src="mmm.jpg" alt="">
     </li>
   </ul>
-</div> -->
+</div>
 
 
 <!-- <div id="img1" class="actor"><img src="m.jpg" alt=""></div>
@@ -42,7 +42,7 @@
 
 
 
-<div class="swiper-container">
+<!-- <div class="swiper-container">
         
   <div class="swiper-wrapper d-flex">
     <div class="swiper-slide">
@@ -81,7 +81,7 @@
     <div class="swiper-slide">Slide 6</div>
     <div class="swiper-slide">Slide 7</div>
   </div>
-</div>
+</div> -->
 
 
 
@@ -98,46 +98,46 @@
 
 
 
-allactor=document.querySelectorAll('.actor')
-console.log(allactor);
+// allactor=document.querySelectorAll('.actor')
+// console.log(allactor);
 
-let actorOption={
-  root:null,
-    rootMargin:'0px',
-    threshold:0.25,
-}
-let actorObserve= new IntersectionObserver((entrees)=>{
-  entrees.forEach((entre)=>{
-    if(!entre.isIntersecting){
-      return
-    }
-    entre.target.classList.add('fade')
-  })
-},actorOption)
-allactor.forEach((atcor)=>{
-  actorObserve.observe(atcor)
-})
+// let actorOption={
+//   root:null,
+//     rootMargin:'0px',
+//     threshold:0.25,
+// }
+// let actorObserve= new IntersectionObserver((entrees)=>{
+//   entrees.forEach((entre)=>{
+//     if(!entre.isIntersecting){
+//       return
+//     }
+//     entre.target.classList.add('fade')
+//   })
+// },actorOption)
+// allactor.forEach((atcor)=>{
+//   actorObserve.observe(atcor)
+// })
 
 //ALL LI OBSERVER
-  // allLi =document.querySelectorAll('li')
-  // console.log(allLi);
-  // let liOption={
-  //   root:null,
-  //   rootMargin:'0px',
-  //   threshold:0.25,
-  // }
-  // let liObserver= new IntersectionObserver((entries)=>{
-  //   entries.forEach((entry)=>{
-  //     if(!entry.isIntersecting){
-  //       return
-  //     }
-  //     entry.target.classList.add('fade')
+  allLi =document.querySelectorAll('li')
+  console.log(allLi);
+  let liOption={
+    root:null,
+    rootMargin:'0px',
+    threshold:0.25,
+  }
+  let liObserver= new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+      if(!entry.isIntersecting){
+        return
+      }
+      entry.target.classList.add('fade')
       
-  //   })
-  // },liOption)
-  // allLi.forEach((li)=>{
-  //   liObserver.observe(li)
-  // })
+    })
+  },liOption)
+  allLi.forEach((li)=>{
+    liObserver.observe(li)
+  })
 
 
 
