@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    img{
+        width: 100%;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: all 500ms;
+    }
+    .fade{
+        transform: translateX(0);
+        opacity: 1;
+        transition: all 100ms;
+    }
+    
+</style>
+
+
+
+
+    <img data-lazy="1.jpg">
+    <img data-lazy="11.jpg">
+    <img data-lazy="2.jpg">
+    <img data-lazy="22.jpg">
+    <img data-lazy="3.jpg">
+
+    <img src="11.jpg" alt="">
+
+    
+    <script>
+        const targets=document.querySelectorAll('img');
+        const lazyLoad= target =>{
+            const io=new IntersectionObserver((entries,observer)=>{
+                entries.forEach(entry =>{
+                    if(entry.isIntersecting){
+                        const img =entry.target;
+                        const src =img.getAttribute('data-lazy');
+                        img.setAttribute('src', src);
+                        img.classList.add('fade');
+                        observer.disconnect();
+                    }
+                });
+            });
+            io.observe(target)
+        };
+        targets.forEach(lazyLoad);
+    </script>
+</body>
+</html>

@@ -9,28 +9,175 @@
 </head>
 <body>
   
+<!-- <div class="container">
+  <ul class="lazy-img">
+    <li>
+      <img src="m.jpg" alt="">
+    </li>
+    <li>
+      <img src="mm.jpg" alt="">
+    </li>
+    <li>
+      <img src="mmm.jpg" alt="">
+    </li>
+    <li>
+      <img src="m.jpg" alt="">
+    </li>
+    <li>
+      <img src="mm.jpg" alt="">
+    </li>
+    <li>
+      <img src="mm.jpg" alt="">
+    </li>
+    <li>
+      <img src="mmm.jpg" alt="">
+    </li>
+  </ul>
+</div> -->
 
-  <table>
-    <tr>
-      <td class="up-list"><a href="#" class="up-list1"><h3>Kammara</h3>
-        <img src="m.jpg" />  <h4>Malayalam</h4><p>2018</p></a></td>
+
+<!-- <div id="img1" class="actor"><img src="m.jpg" alt=""></div>
+<div id="img2" class="actor"><img src="mm.jpg" alt=""></div>
+<div id="img3" class="actor"><img src="mmm.jpg" alt=""></div> -->
+
+
+
+<div class="swiper-container">
+        
+  <div class="swiper-wrapper d-flex">
+    <div class="swiper-slide">
+      <div class="actor">
+        <a href="#">
+          <img src="filmtry/image/tovino.jpg" alt="" srcset="" />
+          <p>Tovino Thomas</p>
+        </a>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="actor">
+        <a href="#">
+          <img src="filmtry/image/tovino.jpg" alt="" srcset="" />
+          <p>Tovino Thomas</p>
+        </a>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="actor">
+        <a href="#">
+          <img src="filmtry/image/aishwarya.jpg" alt="" srcset="" />
+          <p>Tovino Thomas</p>
+        </a>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="actor">
+        <a href="#">
+          <img src="filmtry/image/aishwarya.jpg" alt="" srcset="" />
+          <p>Tovino Thomas</p>
+        </a>
+      </div>
+    </div>
+    <div class="swiper-slide">Slide 5</div>
+    <div class="swiper-slide">Slide 6</div>
+    <div class="swiper-slide">Slide 7</div>
+  </div>
+</div>
+
+
+
+
+<script>
+
+
+
+  
+     
+
+
+//ACTOR OBSERVE
+
+
+
+allactor=document.querySelectorAll('.actor')
+console.log(allactor);
+
+let actorOption={
+  root:null,
+    rootMargin:'0px',
+    threshold:0.25,
+}
+let actorObserve= new IntersectionObserver((entrees)=>{
+  entrees.forEach((entre)=>{
+    if(!entre.isIntersecting){
+      return
+    }
+    entre.target.classList.add('fade')
+  })
+},actorOption)
+allactor.forEach((atcor)=>{
+  actorObserve.observe(atcor)
+})
+
+//ALL LI OBSERVER
+  // allLi =document.querySelectorAll('li')
+  // console.log(allLi);
+  // let liOption={
+  //   root:null,
+  //   rootMargin:'0px',
+  //   threshold:0.25,
+  // }
+  // let liObserver= new IntersectionObserver((entries)=>{
+  //   entries.forEach((entry)=>{
+  //     if(!entry.isIntersecting){
+  //       return
+  //     }
+  //     entry.target.classList.add('fade')
       
-      <td class="up-list">
-        Text
-        <img src="mm.jpg" /><h4>Malayalam</h4><p>2018</p></td>
-      <td class="up-list">Text
-        <img src="mmm.jpg" /><h4>Malayalam</h4><p>2018</p></td>
-    </tr>
-    <tr>
-      <td class="up-list">Text
-        <img src="mmm.jpg" />Text</td>
-      <td class="up-list">Text
-        <img src="mm.jpg" />Text</td>
-      <td class="up-list">Text
-        <img src="//dummyimage.com/100x100.jpg" />Text</td>
-    </tr>
-  </table>
+  //   })
+  // },liOption)
+  // allLi.forEach((li)=>{
+  //   liObserver.observe(li)
+  // })
 
+
+
+
+
+  // $(document).ready(function () {
+  //        // Swiper: Slider
+  //        new Swiper(".swiper-container", {
+  //          loop: true,
+  //        //   nextButton: ".swiper-button-next",
+  //        //   prevButton: ".swiper-button-prev",
+  //          slidesPerView: 3,
+  //          paginationClickable: true,
+  //          spaceBetween: 20,
+  //          breakpoints: {
+  //            1920: {
+  //              slidesPerView: 10,
+  //              spaceBetween: 30,
+  //            },
+  //            1028: {
+  //              slidesPerView: 10,
+  //              spaceBetween: 30,
+  //            },
+  //            480: {
+  //              slidesPerView: 4,
+  //              spaceBetween: 10,
+  //            },
+  //            380: {
+  //              slidesPerView: 4,
+  //              spaceBetween: 10 ,
+  //            },
+  //          },
+  //        });
+  //      });
+
+
+
+
+
+</script>
 
 
 

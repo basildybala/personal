@@ -1,3 +1,25 @@
+// allactor=document.querySelectorAll('.card')
+// console.log(allactor);
+
+// let actorOption={
+//   root:null,
+//     rootMargin:'0px',
+//     threshold:0.25,
+// }
+// let actorObserve= new IntersectionObserver((entrees)=>{
+//   entrees.forEach((entre)=>{
+//     if(!entre.isIntersecting){
+//       return
+//     }
+//     entre.target.classList.add('fade')
+//   })
+// },actorOption)
+// allactor.forEach((atcor)=>{
+//   actorObserve.observe(atcor)
+// })
+
+
+
 $(function()
 {
     function after_form_submitted(data) 
