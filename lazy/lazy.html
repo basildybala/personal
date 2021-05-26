@@ -8,49 +8,43 @@
 </head>
 <body>
 <style>
-    img{
-        width: 100%;
-    transform: translateX(50%);
-    opacity: 0;
-    transition: all 500ms;
-    }
-    .fade{
-        transform: translateX(0);
-        opacity: 1;
-        transition: all 100ms;
+   .images-sec{
+       display: flex;
+       padding: 20px;
+       overflow-x: scroll;
+       overflow-y: hidden;
+   }
+   .images-sec::-webkit-scrollbar{
+       display: none;
+   }
+    .photo1{
+        width: 200px;
+        height: 300px;
+        margin-right: 10px;
     }
     
 </style>
 
+<div class="images-sec">
+<div class="photo"><img class="photo1" src="1.jpg" alt="LOADING"></div>
+
+<div class="photo"><img class="photo1" data-src="11.jpg" ></div>
+<div class="photo"><img class="photo1" data-src="2.jpg" ></div>
+<div class="photo"><img class="photo1" data-src="22.jpg" ></div>
+<div class="photo"><img class="photo1" data-src="3.jpg" ></div>
+<div class="photo"><img class="photo1" data-src="m.jpg" ></div>
+<div class="photo"><img class="photo1" data-src="mm.jpg" ></div>
+<div class="photo"><img class="photo1" data-src="mmm.jpg" ></div>
+</div> 
 
 
-
-    <img data-lazy="1.jpg">
-    <img data-lazy="11.jpg">
-    <img data-lazy="2.jpg">
-    <img data-lazy="22.jpg">
-    <img data-lazy="3.jpg">
-
-    <img src="11.jpg" alt="">
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
 
     
     <script>
-        const targets=document.querySelectorAll('img');
-        const lazyLoad= target =>{
-            const io=new IntersectionObserver((entries,observer)=>{
-                entries.forEach(entry =>{
-                    if(entry.isIntersecting){
-                        const img =entry.target;
-                        const src =img.getAttribute('data-lazy');
-                        img.setAttribute('src', src);
-                        img.classList.add('fade');
-                        observer.disconnect();
-                    }
-                });
-            });
-            io.observe(target)
-        };
-        targets.forEach(lazyLoad);
+       const myLazyLoad= new LazyLoad ({
+           elements_selector:".photo1"
+       });
     </script>
 </body>
 </html>
