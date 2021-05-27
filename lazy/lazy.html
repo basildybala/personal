@@ -12,25 +12,97 @@
         margin: 0;
         padding: 0;
     }
-   .images-sec{
-       display: flex;
-       
-       overflow-x: scroll;
-       overflow-y: hidden;
-   }
-   .images-sec::-webkit-scrollbar{
-       display: none;
-   }
-    .photo1{
-        width: 110px;
-        height: 130px;
-        margin-right: 10px;
-        object-fit: cover;
-    }
+  /*ACTOR SWAP*/
+.swiper{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.swiper::-webkit-scrollbar{
+    display: none;
+}
+.actorswp{
+    width: 110px;
+    height: 150px;
+    overflow: hidden;
+    margin-right: 5px;
+    
+}
+.actorswp img{
+    width: 100%;
+    height: 117px;
+    object-fit: cover;
+}
+.actorswp a{
+    text-decoration: none;
+}
+.actorswp h6{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: 'Varela Round';
+    color: #211818;
+    font-weight: 900;
+    text-align: center;
+    
+}
+.actorswp p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(0 0 0 / 73%);
+    font-family: sans-serif;
+}
+.actor-swp{
+    display: flex;
+    border-bottom: 1px solid rgb(219, 199, 199);
+}
     
 </style>
-
-<div class="images-sec">
+<div class="swiper">
+    <div class="actor-swp">
+      <div class="actorswp">
+      <a href="/actor/{{movie.actid1}}"><img src="1.jpg" alt="">
+      <h6>{{movie.actorname1}}</h6>
+      <p>{{movie.mvactorname1}}</p>
+      </a>
+      </div>
+      <div class="actorswp">
+      <a href="/actor/{{movie.actid2}}"><img src="11.jpg" alt="">
+      <h6>{{movie.actorname2}}</h6>
+      <p>{{movie.mvactorname2}}</p>
+      </a>
+      </div>
+       <div class="actorswp">
+      <a href="/actor/{{movie.actid3}}"><img src="2.jpg" alt="">
+      <h6>{{movie.actorname3}}</h6>
+      <p>{{movie.mvactorname3}}</p>
+      </a>
+      </div>
+       <div class="actorswp">
+      <a href="/actor/{{movie.actid4}}"><img src="22.jpg" alt="">
+      <h6>{{movie.actorname4}}</h6>
+      <p>{{movie.mvactorname4}}</p>
+      </a>
+      </div>
+       <div class="actorswp">
+      <a href="/actor/{{movie.actid5}}"><img src="3.jpg" alt="">
+      <h6>{{movie.actorname5}}</h6>
+      <p>{{movie.mvactorname5}}</p>
+      </a>
+      </div>
+       <div class="actorswp">
+      <a href="/actor/{{movie.actid6}}"><img src="m.jpg" alt="">
+      <h6>{{movie.actorname6}}</h6>
+      <p>{{movie.mvactorname6}}</p>
+      </a>
+      </div>
+      
+    </div>
+    
+  </div>
+<!-- <div class="images-sec">
 <div class="photo"><img class="photo1" src="1.jpg" alt="LOADING"></div>
 
 <div class="photo"><img class="photo1" data-src="11.jpg" ></div>
@@ -40,7 +112,7 @@
 <div class="photo"><img class="photo1" data-src="m.jpg" ></div>
 <div class="photo"><img class="photo1" data-src="mm.jpg" ></div>
 <div class="photo"><img class="photo1" data-src="mmm.jpg" ></div>
-</div> 
+</div>  -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
