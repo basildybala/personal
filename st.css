@@ -31,9 +31,140 @@ ul li img{
   transform: translateX(0);
   
 }
-/* .d-flex{
+.head11{
   display: flex;
-} */
+  align-items: center;
+  justify-content: space-around;
+}
+.head111{
+  width: 110px;
+}
+.head111 p{
+  
+  font-size: 0.8em;
+  margin: 0;
+  font-weight: 700;
+  
+  color: rgb(252, 54, 19);
+  font-family: 'Varela Round', sans-serif;
+  
+}
 
 
 
+.head1111{
+  margin-top: 10px;
+  width: 110px;
+}
+.head1111 p{
+  color: rgb(0 0 0 / 53%);
+  font-family: sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  margin-top: 10px;
+  margin: 0;
+}
+
+/*Video Secton*/
+
+.video-row{
+  margin-right: 10PX;
+}
+.video-row iframe{
+  width: 300PX;
+ 
+}
+
+
+
+.swiper-container {
+  width: 93%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  
+}
+.mv-details{
+  display: flex;
+  align-items: center;
+}
+.actor-section{
+  border-bottom: 1px solid rgb(219, 199, 199);
+  margin: 5px 0px;
+  
+}
+.mv-details h4{
+  font-size: 15px;
+  font-weight: bold;
+  margin: 5px;
+  font-family: sans-serif;
+}
+.mv-details h5{
+  font-size: 13px;
+  color: rgb(252, 54, 19);
+  font-family: 'Varela Round', sans-serif;
+  margin: 5px;
+}
+/*YOUTUBE TRAILOR */
+.story-readmore{
+  position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 98%;
+    height: auto;
+    background-color: #332b2b;
+    color: white;
+    padding: 15px;
+    border: 1px solid red;
+  
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5 ;
+
+}
+.story-readmore p{
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+}
+.story-readmore .close{
+  position: absolute;
+  top: 0%;
+    right: 0%;
+    font-size: 35px;
+  cursor: pointer;
+  color: red;
+  z-index: 9998;
+  font-weight: 900;
+
+}
+  
+.story-readmore.show{
+  pointer-events: all;
+  opacity: 1;
+
+}
+.story-readmore.show {
+  transform: scale(1);
+}
+.m{
+  width: 100%;
+  height: 500px;
+  background-color: red;
+}
+.readmore-btn{
+  text-align: center;
+  display: inline-block;
+  padding: 4px 19px;
+  border: 1px solid  rgb(41, 33, 32);;
+  cursor: pointer;
+  overflow: hidden;
+  
+    
+    font-family: 'Varela Round', sans-serif;
+  
+}
