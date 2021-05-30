@@ -151,11 +151,7 @@ ul li img{
 .story-readmore.show {
   transform: scale(1);
 }
-.m{
-  width: 100%;
-  height: 500px;
-  background-color: red;
-}
+
 .readmore-btn{
   text-align: center;
   display: inline-block;
@@ -163,8 +159,5 @@ ul li img{
   border: 1px solid  rgb(41, 33, 32);;
   cursor: pointer;
   overflow: hidden;
-  
-    
     font-family: 'Varela Round', sans-serif;
-  
 }
