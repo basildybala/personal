@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleee.css">
+</head>
+<body>
+    <div class="add-movies-section">
+        <div class="add-movies-form">
+            <div class="black-header">Add Movies</div>
+            <div class="add-movies-form-section">
+                <form action="/admin/add-movies" class="movies-form" enctype="multipart/form-data" method="POST">
+                    <div class="input-section">
+                        <label class="fm-details">
+                            Movie Name :</label>
+                                <input type="text" name="name" required>
+                                <br>
+                                English Movie Name :</label> 
+                                <input type="text" name="engname" >
+    
+                    </div>
+                    <div class="input-section">
+                        <label class="fm-details">
+                            Category :</label>
+                        <select name="category">
+                            <option value="malayalam">Malayalam</option>
+                            <option value="tamil">Tamil</option>
+                            <option value="hindi">Hindi</option>
+                            <option value="telugu">Telugu</option>
+                            <option value="hollywood">Hollywood</option>
+                            <option value="other">Other</option>
+                            <option value="webseries">Web series</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-section">
+                        <label class="fm-details">
+                            Release Date : </label>
+                        <input type="text" name="releasedate" >
+                    </div>
+                    <div class="input-section">
+                        <label class="fm-details">
+                            Dirctor : </label>
+                        <input type="text" name="director" >
+                    </div>
+                    <div class="input-section">
+                        <label class="fm-details">
+                            Produced By :</label>
+                        <input type="text" name="producedby" >
+                    </div>
+                    <div class="input-section">
+                        <label class="fm-details">
+                            Genre : </label>
+                        <input type="text" name="genre"  > 
+                    </div>
+                    <div class="input-section">
+                        <label class="fm-details">
+                            Duration : </label>
+                        <input type="text" name="duration"  > 
+                    </div>
+                     <div class="input-section">
+                        <label class="fm-details">
+                        <textarea maxlength="600" name="story"  value="Story" cols="40" rows="8" >Story</textarea>
+                    </div>
+                    <div class="input-section">
+                        <label class="fm-details">
+                            Read More Story : </label>
+                        <input type="text" name="readmorestory" >
+                    </div>
+                    <div class="input-section">
+                        <label class="fm-details">
+                            Youtube trailer Link : </label>
+                        <input type="text" name="yttrailorlink" >
+                    </div>
+                    <img src="" style="width: 100px;" id="prodimage1">
+                    <div class="input-section">
+                         <label class="fm-details">
+                            Movie Poster : </label>
+                        <input type="file" name="image" onchange="viewImage(event,'image1')" >
+                    </div>
+                    <div class="input-section">
+                         <label class="fm-details">
+                            Movie Cover Poster : </label>
+                        <input type="file" name="image1" onchange="viewImage(event,'image1')" >
+                    </div>
+                     
+                    <div class="input-section">
+                        <label class="fm-details">
+                            ActroID 1 : </label>
+                        <input type="text" name="actid1" >
+                        <br>
+                        Name<input type="text" name="actorname1" >
+                        <br>
+                         MV Name<input type="text" name="mvactorname1" >
+                    </div>
+    
+                    <div class="input-section">
+                        <label class="fm-details">
+                            ActroID 2 : </label>
+                        <input type="text" name="actid2" >
+                        <br>
+                         Name<input type="text" name="actorname2" >
+                         <br>
+                         MV Name<input type="text" name="mvactorname2" >
+                    </div>
+                    <div class="input-section">
+                        <label class="fm-details">
+                            ActroID 3 : </label>
+                        <input type="text" name="actid3" >
+                        <br>
+                         Name<input type="text" name="actorname3" >
+                         <br>
+                         MV Name<input type="text" name="mvactorname3" >
+                    </div>
+                    <div class="input-section">
+                        <label class="fm-details">
+                            ActroID 4: </label>
+                        <input type="text" name="actid4" >
+                        <br>
+                         Name<input type="text" name="actorname4" >
+                         <br>
+                         MV Name<input type="text" name="mvactorname4" >
+                    </div>
+                     <div class="input-section">
+                        <label class="fm-details">
+                            ActroID 5: </label>
+                        <input type="text" name="actid5" >
+                        <br>
+                         Name<input type="text" name="actorname5" >
+                         <br>
+                         MV Name<input type="text" name="mvactorname5" >
+                    </div>
+                     <div class="input-section">
+                        <label class="fm-details">
+                            ActroID 6: </label>
+                        <input type="text" name="actid6" >
+                        <br>
+                         Name<input type="text" name="actorname6" >
+                         <br>
+                         MV Name<input type="text" name="mvactorname6" >
+                    </div>
+                      <div class="input-section">
+                        <label class="fm-details">
+                            Youtube Links: </label>
+                        <input type="text" name="ytlink" >
+                        <input type="text" name="ytlink1" >
+                        <input type="text" name="ytlink2" >
+                        <input type="text" name="ytlink3" >
+                        
+                    </div>
+                    <button type="submit">Movie Add</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>l

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleee.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="actor-header">kammaty Padam</div>
+        <div class="movie-img">
+           
+          <img  src="../m.jpg" class="backimg lazy-photo" alt="" />
+          <img src="../mm.jpg" class="movie-cover lazy-photo" alt="" />
+          <a href="#" class="trailor-btn">
+          <div class="fa-trailor">   
+          <p> Watch Trailor</p>
+        </div>
+          <i class="fa fa-play "> <i class="material-icons">play_circle_filled</i> </i></a>
+          <div class="video-container">
+            <span class="close"> &#10006; </span>
+            
+            <iframe  class="lazy-photo" data-src="{{movie.yttrailorlink}}" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+        </div>
+        
+        </div>
+        
+        <div class="mv-head"><i class="material-icons">star</i><h6>Kammara Sambavam</h6></div>
+        
+         <div class="head11">
+         <div class="head111"><p>Release Date</p></div>
+          <div class="head111"><p>Language</p></div>
+           <div class="head111"><p>Genre</p></div>
+          
+        </div>
+        <div class="head11">
+         <div class="head1111"><p>32344</p>
+         
+         </div>
+          <div class="head1111"><p>Malayalam</p></div>
+           <div class="head1111"><p>Action</p></div>
+          
+        </div>
+        
+       
+        <!----------------Actors-->
+        <div class="basic-head"><h4>Actors</h4></div>
+          <div class="swiper">
+            <div class="actor-swp">
+              <div class="actorswp">
+              <a href="/actor/{{movie.actid1}}"><img class="lazy-photo" src="../lazy/3.jpg" alt="">
+              <h6>Arnold</h6>
+              <p>Kunjappu</p>
+              </a>
+              </div>
+              <div class="actorswp">
+                <a href="/actor/{{movie.actid1}}"><img class="lazy-photo" src="../lazy/3.jpg" alt="">
+                <h6>Arnold</h6>
+                <p>Kunjappu</p>
+                </a>
+                </div>
+                <div class="actorswp">
+                    <a href="/actor/{{movie.actid1}}"><img class="lazy-photo" src="../lazy/3.jpg" alt="">
+                    <h6>Arnold</h6>
+                    <p>Kunjappu</p>
+                    </a>
+                    </div>
+                    <div class="actorswp">
+                        <a href="/actor/{{movie.actid1}}"><img class="lazy-photo" src="../lazy/3.jpg" alt="">
+                        <h6>Arnold</h6>
+                        <p>Kunjappu</p>
+                        </a>
+                        </div>
+
+              
+            </div>
+            
+          </div>
+       
+        <div class="mv-details-section">
+          
+            <div class="head11">
+         <div class="head111"><p>Length</p></div>
+          <div class="head111"><p>Director</p></div>
+           <div class="head111"><p>producedby</p></div>
+          
+        </div>
+        <div class="head11">
+         <div class="head1111"><p>{{movie.duration}}</p></div>
+          <div class="head1111"><p>{{movie.director}}</p></div>
+           <div class="head1111"><p>{{movie.producedby}}</p></div>
+          
+        </div>
+        
+        
+          <div class="story">
+            <div class="story-h"><p>Story:</p></div>
+            <div class="story-p">
+              <p>
+                  {{movie.story}}
+              </p>
+              {{#if movie.readmorestory}}
+              <span class="readmore-btn">Read More</span>{{/if}}
+    <div class="story-readmore">
+  
+      <span class="closee"> &#10006; </span>
+      
+      <p>{{movie.readmorestory}}</p>
+  </div>
+            </div>
+          </div>
+        </div>
+        {{!-- <div class="basic-head"><h4>Images</h4> </div>
+        <div class="image-section">
+          <div class="swiper-containerr">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="movie-images">
+                    <a href="#">
+                      <img src="/images/movie-posters/{{movie._id}}.jpg" alt="" srcset="" />
+                     
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="movie-images">
+                    <a href="#">
+                      <img src="/images/movie-posters/{{movie._id}}.jpg" alt="" srcset="" />
+                     
+                    </a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+        </div> --}}
+         <div class="basic-head"><h4>Video</h4> </div>
+        <div class="swiper">
+          {{#if movie.ytlink}}
+            <div class="video-row">
+              <iframe class="lazy-photo" data-src="{{movie.ytlink}}" frameborder="0" allow="autoplay"  allowfullscreen></iframe>
+            </div>
+            {{else}}
+            <div class="basic-head"><h4 style="color: black;">Not Video Release</h4> </div>
+            {{/if}}
+            {{#if movie.ytlink1}}
+            <div class="video-row">
+              <iframe class="lazy-photo" data-src="{{movie.ytlink1}}" frameborder="0" allow="autoplay"  allowfullscreen></iframe>
+            </div>
+            {{/if}}
+            {{#if movie.ytlink2}}
+            <div class="video-row">
+              <iframe class="lazy-photo" data-src="{{movie.ytlink2}}" frameborder="0" allow="autoplay"  allowfullscreen></iframe>
+            </div>
+            {{/if}}
+            {{#if movie.ytlink3}}
+            <div class="video-row">
+              <iframe class="lazy-photo" data-src="{{movie.ytlink3}}" frameborder="0" allow="autoplay"  allowfullscreen></iframe>
+            </div>
+            {{/if}}
+        </div>
+        
+      </div>
+  
+      <script>
+        //Trailor Popup
+     const btn =document.querySelector('.trailor-btn');
+     const videoContainer=document.querySelector('.video-container');
+     const close =document.querySelector('.close');
+     
+     
+     btn.addEventListener('click',()=>{
+         videoContainer.classList.add('show')
+     })
+     close.addEventListener('click',()=>{
+         videoContainer.classList.remove('show')
+     })
+      </script>
+      
+      
+     
+     
+       
+  
+     
+      
+  
+    
+  
+  
+</body>
+</html>
