@@ -5,168 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/410a50dbac.js" crossorigin="anonymous"></script>
+    
+    
     <link rel="stylesheet" href="styleee.css">
     <script src="ad.js"></script>
 </head>
 <body>
   <style>
-    .movies-list-latestupdate{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 87px;
-    margin: 2px 2px;
-    height: 130px;
-    background-color: #1c1c1cdb;
-}
-.movies-img-latestupdate img{
+   .end-container{
+    background-color: rgb(54 46 46);
     width: 100%;
-    height:105px ;
-    object-fit: cover;
-}
-.movies-section{
-    display: flex;
-    flex-wrap: wrap;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+   }
+   .connect-social{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   .connect-icons i{
+    font-size: 19px;
+    color: rgb(252, 54, 19);
+    margin-right: 8px;
+   }
+   .connect-text p{
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-right: 3px;
+   }
+   .end-copyright{
     align-items: center;
     justify-content: center;
-    
-}
-.movies-section a{
-    text-decoration: none;
-    
-}
-.movies-body-latestupdate{
-   
-   
-    
-    text-align: center;
-}
-.movies-body-latestupdate p{
-    margin: 0px;
+    display: flex;
     color: white;
-    font-family: 'Varela Round';
-    font-weight: 500;
-    font-size: 8px;
+    font-size: 13px;
+    font-family: sans-serif;
+    margin-top: 6px;
+   }
+   .share-link{
+     margin-top: 9px;
+    display: flex;
+    align-items: center;
+   }
+   .share-link h4{
+     margin: 4px 8px;
+     color: rgb(0,0,0,0.7);
+     font-family: 'Varela Round', sans-serif;
+    font-size: 0.9em;
+    font-weight: 900;
     
-    
-}
+   }
+   .share-whats i{
+    color: #27ba2d;
+    font-size: 24px;
+   }
+   .share-tele i{
+     margin-right: 10px;
+     font-size: 24px;
+     color: #0088cc;
+   }
+   
   </style>
     <section>
 
-  
-      <div class="movies-section">
-        
-          <a href="/movie/{{this._id}}" class="movies-list-latestupdate">
-            <div class="movies-img-latestupdate">
-              <img src="mm.jpg" alt="" srcset="">
-            </div>
-          <div class="movies-body-latestupdate">
-            <p>മായനാടി</p>
-          </div>  
-          
-          </a>
-          <a href="/movie/{{this._id}}" class="movies-list-latestupdate">
-            <div class="movies-img-latestupdate">
-              <img src="mm.jpg" alt="" srcset="">
-            </div>
-          <div class="movies-body-latestupdate">
-            <p>അക്കരേ അക്കരേ</p>
-          </div>  
-          
-          </a>
-          <a href="/movie/{{this._id}}" class="movies-list-latestupdate">
-            <div class="movies-img-latestupdate">
-              <img src="mm.jpg" alt="" srcset="">
-            </div>
-          <div class="movies-body-latestupdate">
-            <p>അയ്യോബിന്റെ പുസ്തകം മായനാടി</p>
-          </div>  
-          
-          </a>
-          <a href="/movie/{{this._id}}" class="movies-list-latestupdate">
-            <div class="movies-img-latestupdate">
-              <img src="mm.jpg" alt="" srcset="">
-            </div>
-          <div class="movies-body-latestupdate">
-            <p>മായനാടി മായനാടി  മായനാടി മായനാടി മായനാടി മായനാടി</p>
-          </div>  
-          
-          </a>
-          <a href="/movie/{{this._id}}" class="movies-list-latestupdate">
-            <div class="movies-img-latestupdate">
-              <img src="mm.jpg" alt="" srcset="">
-            </div>
-          <div class="movies-body-latestupdate">
-            <p>Akkare Akkare</p>
-          </div>  
-          
-          </a>
-          <a href="/movie/{{this._id}}" class="movies-list-latestupdate">
-            <div class="movies-img-latestupdate">
-              <img src="mm.jpg" alt="" srcset="">
-            </div>
-          <div class="movies-body-latestupdate">
-            <p>Akkare Akkare</p>
-          </div>  
-          
-          </a>
-          <a href="/movie/{{this._id}}" class="movies-list-latestupdate">
-            <div class="movies-img-latestupdate">
-              <img src="mm.jpg" alt="" srcset="">
-            </div>
-          <div class="movies-body-latestupdate">
-            <p>Akkare Akkare</p>
-          </div>  
-          
-          </a>
-          <a href="/movie/{{this._id}}" class="movies-list-latestupdate">
-            <div class="movies-img-latestupdate">
-              <img src="mm.jpg" alt="" srcset="">
-            </div>
-          <div class="movies-body-latestupdate">
-            <p>Akkare Akkare</p>
-          </div>  
-          
-          </a>
-          <a href="/movie/{{this._id}}" class="movies-list-latestupdate">
-            <div class="movies-img-latestupdate">
-              <img src="mm.jpg" alt="" srcset="">
-            </div>
-          <div class="movies-body-latestupdate">
-            <p>Akkare Akkare</p>
-          </div>  
-          
-          </a>
-          <a href="/movie/{{this._id}}" class="movies-list-latestupdate">
-            <div class="movies-img-latestupdate">
-              <img src="mm.jpg" alt="" srcset="">
-            </div>
-          <div class="movies-body-latestupdate">
-            <p>Akkare Akkare</p>
-          </div>  
-          
-          </a>
-          <a href="/movie/{{this._id}}" class="movies-list-latestupdate">
-            <div class="movies-img-latestupdate">
-              <img src="mm.jpg" alt="" srcset="">
-            </div>
-          <div class="movies-body-latestupdate">
-            <p>Akkare Akkare</p>
-          </div>  
-          
-          </a>
-          <a href="/movie/{{this._id}}" class="movies-list-latestupdate">
-            <div class="movies-img-latestupdate">
-              <img src="mm.jpg" alt="" srcset="">
-            </div>
-          <div class="movies-body-latestupdate">
-            <p>Akkare Akkare</p>
-          </div>  
-          
-          </a>
-        
+
+      <div class="share-link">
+        <h4>Share With:</h4> 
+        <a href="#" class="share-tele" ><i class="fa fa-telegram" aria-hidden="true"></i></a>
+        <a href="whatsapp://send?text=http://mrharshid.tk  My Presonal Web Site" data-action="share/whatsapp/share" class="share-whats" ><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
       </div>
-  
+
+  <div class="end-container">
+    <div class="connect-social">
+      <div class="connect-text">
+        <p>Connect us :</p>
+      </div>
+      <a href="#" class="connect-icons"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="#" class="connect-icons"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+      <a href="#" class="connect-icons"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      
+    </div>
+    <div class="end-copyright"><i class="fa fa-copyright" aria-hidden="true">Dramalite.Com</i></div>
+    
+  </div>
+ 
 
         
           
@@ -178,9 +104,7 @@
       
     
     </section>
-     <hr>
-    <a href="add.html">ADD MOVIES</a>
-    <a href="admin-show.html">admin Show Movies</a>
+    
     
 </body>
 </html>
