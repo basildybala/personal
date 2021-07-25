@@ -212,7 +212,7 @@ body{
     position: relative;
 }
 .backimg{
-    height: 340px;
+    height: 260px;
     width: 100%;
     border-radius: 20px;
    
@@ -223,7 +223,7 @@ body{
 }
 .movie-cover{
     position: absolute;
-    height: 150px;
+    height: 170px;
     max-width: 135px;
     bottom: -58px;
     left: 26px;
@@ -970,6 +970,16 @@ margin: 2px;
     margin-left: 8px;
     color: blue;
   }
+  .logo img {
+    width: 90%;
+    height: 86px;
+    margin-top: 10px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
  
 @media(min-width: 767px){
     .movie-poster img{
