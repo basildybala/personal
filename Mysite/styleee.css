@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=PT+Sans+Narrow&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manjari&family=Noto+Sans&display=swap');
 
 body{
     margin: 0;
@@ -279,9 +280,10 @@ body{
     color: rgb(252, 54, 19);
 }
 .mv-head h6{
-    margin: 0 5px;
+    margin: 0 2px;
     color: rgb(0 0 0 / 70%);
-    font-family: sans-serif;
+    font-family: 'manjari';
+    font-size: 17px;
 }
 
 .head11{
@@ -442,8 +444,8 @@ body{
     width: 100%;
     text-overflow: ellipsis;
     color: rgba(17, 16, 16, 0.7);
-    font-family: sans-serif;
-    font-size: 0.8em;
+    font-family: 'manjari';
+    font-size: 15px;
     margin-left: 8px;
     margin-top: 4px;
     margin-bottom: 0px;
@@ -792,9 +794,9 @@ margin: 2px;
   }
   .story-readmore p{
     letter-spacing: 1px;
-    font-family: sans-serif;
-    font-weight: 500;
-    font-size: 12px;
+    font-family: 'manjari';
+    font-weight: 400;
+    font-size: 15px;
   }
   .story-readmore .closee{
     position: absolute;
@@ -974,12 +976,60 @@ margin: 2px;
     width: 90%;
     height: 86px;
     margin-top: 10px;
+    object-fit: contain;
 }
 .logo{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+/*Search Bar */
+.search-bar input{
+    width: 230px;
+    height:32px;
+    font-size: 13px;
+    padding: 0px 10px;
+    border-radius: 25px 0 0 25px;
+    background: #e0dede;
+    border: none;
+  }
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-text h3{
+    font-family: 'Manjari';
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    margin-top: 0px;
+}
+.search-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button{
+    height: 32px;
+    border: 1px solid black;
+    width: 75px;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    background: #4c4747;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.search-button a{
+  text-decoration: none;
+  color: white;
+}
+/*LOGO TEXT*/
+
  
 @media(min-width: 767px){
     .movie-poster img{
