@@ -7,7 +7,7 @@ body{
     box-sizing: border-box;   
 }
 .full-body{
-    background-color: #e9eaed;
+    background-color: #ecf1ffb5;
 }
 
 /*-----------------------Header Mwnu------------------*/
@@ -394,16 +394,20 @@ body{
     border-radius: 10px;
 } */
 .basic-head{
-    border-top: 1px solid rgb(219, 199, 199);
-    color: rgb(0,0,0,0.7);
-    font-family: sans-serif;
     font-size: 0.9em;
-    font-weight: 800;  
     margin-top: 10px;
+    width: 82px;
+    height: 27px;
+    background-color: rgb(76 71 71);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 .basic-head h4{
-    margin: 4px 8px;
-    color: rgb(252, 54, 19);
+    color: rgb(255, 255, 255);
     font-family: 'Varela Round', sans-serif;
 }
 .head3{
@@ -824,15 +828,17 @@ margin: 2px;
   }
   
   .readmore-btn{
+    
+      color: blue;
     text-align: center;
     display: inline-block;
     padding: 3px 9px;
-    border: 1px solid  rgb(41, 33, 32);;
+    border: 1px solid rgb(41, 33, 32);
     cursor: pointer;
     overflow: hidden;
-      font-family: 'Varela Round', sans-serif;
-      font-size: 11px;
-      margin-left: 8px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 11px;
+    margin-left: 8px;
   }
 
   /*NAV BAR*/
@@ -966,15 +972,16 @@ margin: 2px;
   }
   
   .readmore-btn-english{
+    color: blue;
     text-align: center;
     display: inline-block;
     padding: 3px 9px;
     border: 1px solid rgb(41, 33, 32);
     cursor: pointer;
+    overflow: hidden;
     font-family: 'Varela Round', sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     margin-left: 8px;
-    color: blue;
   }
   .logo img {
     width: 90%;
