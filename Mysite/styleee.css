@@ -752,7 +752,7 @@ margin: 2px;
 .actorswp img{
     width: 100%;
     height: 117px;
-    border-radius: 10px;
+    border-radius: 4px;
     object-fit: cover;
 }
 .actorswp a{
@@ -1056,7 +1056,9 @@ margin: 2px;
     font-size: 14px;
 }
 
-
+.nav-search{
+    background-color: white);
+}
 /*LOGO TEXT*/
 
  
