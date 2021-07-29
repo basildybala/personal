@@ -405,6 +405,7 @@ body{
     justify-content: center;
     border-radius: 4px;
     margin-bottom: 10px;
+    margin-left: 1%;
 }
 .basic-head h4{
     color: rgb(255, 255, 255);
@@ -427,12 +428,8 @@ body{
     font-size: 0.8em;
 }
 .story{
-    
-    
-    border-top: 1px solid #ddd1d1;
     width: 100%;
     margin: auto;
-    
     position: relative;
     height: auto;
 }
@@ -449,9 +446,8 @@ body{
     width: 100%;
 }
 .story-p p{
-    width: 100%;
     text-overflow: ellipsis;
-    color: rgba(17, 16, 16, 0.7);
+    font-weight: 500;
     font-family: 'manjari';
     font-size: 15px;
     margin-left: 8px;
@@ -1039,6 +1035,26 @@ margin: 2px;
   text-decoration: none;
   color: white;
 }
+
+.details{
+    margin-left: 1%;
+}
+.details-col{
+    display: flex;
+}
+.details-col h5{
+    font-weight: bolder;
+    font-size: 14px;
+    font-family: 'Varela Round', sans-serif;
+    margin: 1px;
+}
+.details-col p{
+    margin: 1px 7px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+}
+
+
 /*LOGO TEXT*/
 
  
