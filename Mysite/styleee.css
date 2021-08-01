@@ -1108,6 +1108,32 @@ margin: 2px;
     margin: 1px 0px;
     color: #27ba2d;  
 }
+.connect-with-text{
+    font-family: 'Varela Round';
+    font-size: 14px;
+    margin: 4px 5px;
+   
+}
+.connect-with{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.connect-instagram{
+    font-size: 20px;
+    color: #cd486b;
+    margin-left: 4px;
+}
+.connect-telegram{
+    font-size: 20px;
+    color: #0088cc;
+    margin-left: 4px;
+}
+.connect-facebook{
+    font-size: 20px;
+    color: #4267B2;
+    margin-left: 4px;
+}
 
  
 @media(min-width: 767px){
