@@ -482,6 +482,7 @@ body{
     margin-top: 4px;
     margin-bottom: 0px;
     line-height: 19px;
+    letter-spacing: 1px;
 }
 .image-section{
     border-bottom: rgb(209, 207, 207) solid;
