@@ -21,6 +21,30 @@
 
 </html>
 <body>
+
+  <meta property="og:title" content="{{movie.engname}}({{movie.year}}).{{movie.name}}">
+<meta property="og:site_name" content="DramaLite.Com ">
+<meta property="og:url" content="https://dramalite.com/movie/{{movie._id}}">
+<meta property="og:description" content="Language:{{movie.category}}, Duration:{{movie.duration}}, Story:{{movie.story}}">
+<meta property="og:type" content="video.movie">
+<meta property="og:image" content="../mmm.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Movie",
+  "name": "hgh",
+  "url": "https://dramalite.com/movie/{{movie._id}}",
+  "image": "https://dramalite.com/images/movie-posters/{{movie._id}}.jpg",
+  "dateCreated": "{{movie.year}}",
+  "director": "{{movie.director}}",
+  "inLanguage":"{{movie.category}}",
+  "description":"{{movie.story}}",
+  "actor":[{"@type":"Person", "url":"/actor/{{movie.actid1}}","name":"{{movie.actorname1}}"},
+           {"@type":"Person","url":"/actor/{{movie.actid2}}","name":"{{movie.actorname2}}"}]
+
+}
+</script>
 <div class="full-body">
   <div class="website-header">
     <div class="website-english-header">
