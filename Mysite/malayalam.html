@@ -13,332 +13,60 @@
 </head>
 <body>
   <style>
-
-   .end-container{
-    background-color: rgb(54 46 46);
+.best-movies-header{
+  background-color: rgb(76 71 71);
     width: 100%;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-   }
-   .connect-social{
-     display: flex;
-     align-items: center;
-     justify-content: center;
-   }
-   .connect-icons i{
-    font-size: 19px;
-    color: rgb(252, 54, 19);
-    margin-right: 8px;
-   }
-   .connect-text p{
-    margin: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
     color: white;
-    font-family: sans-serif;
-    font-size: 15px;
-    margin-right: 3px;
-   }
-   .end-copyright{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    color: white;
-    font-size: 13px;
-    font-family: sans-serif;
-    margin-top: 6px;
-   }
-   .share-link{
-     margin-top: 9px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 160px;
-   }
-   .share-link h4{
-     margin: 4px 8px;
-     color: rgb(0,0,0,0.7);
-     font-family: 'Varela Round', sans-serif;
-    font-size: 0.9em;
-    font-weight: 900;
-    
-   }
-   .share-whats i{
-    color: #27ba2d;
-    font-size: 24px;
-   }
-   .share-tele i{
-     margin-right: 10px;
-     font-size: 24px;
-     color: #0088cc;
-   }
-   .coll{
-     width: 100px;
-     height: 4000px;
-     background-color: red;
-   }
-   .nav-bar-sticky{
-     position: relative;
-     margin-top: 1000px;
-    
-   }
-   .nav-bar-sticky ul{
-    display: flex;
-    list-style: none;
-    margin-left: -35px;
-   }
-  
-   .nav-bar-sticky ul li a{
-     text-decoration: none;
-     color: black;
-   }
-   .nav-swiper{
-    display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
-   }
-   .nav-bar-sticky span{
-    background-color: rgb(180 169 169 / 70%);
-    margin-right: 3px;
-    padding: 2px 6px;
-    font-family: sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-   }
-   .nav-swiper li{
-    background-color: rgb(180 169 169 / 70%);
-    margin-right: 5px;
-    padding: 3px 8px;
-    font-family: sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    border-radius: 5px;
-
-   }
-   
-   
-   .nav-swiper::-webkit-scrollbar{
-     display: none;
-   }
-  .search-bar input{
-    width: 230px;
-    height:27px;
-    font-size: 13px;
-    padding: 0px 10px;
-    border-radius: 25px 0 0 25px;
-    background: #e0dede;
-    border: none;
-  }
-
-.search-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.search-button{
-    height: 27px;
-    border: 1px solid black;
-    width: 75px;
-    border-radius: 0 25px 25px 0;
-    cursor: pointer;
-    background: #4c4747;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-}
-.search-button a{
-  text-decoration: none;
-  color: white;
-}
-.malayalam h4{
-  font-family: 'Manjari', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-}
-.malayalam h5{
-  font-family: 'Manjari', sans-serif;
-  font-size: 17px;
-}
-.malayalam h6{
-  font-family: 'Manjari', sans-serif;
-  font-size: 19px;
-}
-.malayalam h3{
-  font-family: 'Manjari', sans-serif;
-  font-size: 21px;
-}
-.malayalam h2{
-  font-family: 'Manjari', sans-serif;
-  font-size: 13px;
-}
-.malayalam h1{
-  font-family: 'Manjari', sans-serif; 
-  font-size: 23px;
-}
-.actor-pic{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .actor-pic img{
-    max-width: 390px;
-    max-height: 600px;
-  }
-
-  .connect-instagramm{
-    font-size: 30px;
-    color: #cd486b;
-    margin-left: 5px;
-  }
-  .connect-twitter{
-    font-size: 30px;
-    color: #1DA1F2;
-    margin-left: 5px;
-  }
-  .actor-social-media{
-    display: flex;
-    justify-content: space-evenly;
-    align-items:center;
-  }
-  .round-40{
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  display: inline-block;
-   border: 1px solid;
-  }
-  .connect-instagramm i{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-   
-  }
-  .connect-twitter i{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-   
-  }
-  .heading-name h2{
-    margin: 0;
-    font-size: 16px;
-    font-family: 'varela Round';
-    font-weight: bold;
-    margin: 5px 8px;
-  }
- .heading-name{
-   display: flex;
-   margin: 7px 0;
-   align-items: center;
- }
- .heading-name i {
-   font-size: 22px;
-    color: #cd48b0;
-    margin: 2px 5px;
- }
- .ac-details{
-  display: flex;
-  align-items: center;
-  margin: 7px 18px;
- }
- .ac-details h4{
-   margin: 0;
-    font-family: 'Varela Round';
-    font-size: 15px;
-    margin-right: 4px;
- }
- .ac-details h5{
-       margin: 0;
-    font-family: 'Varela Round';
-    color: #fc3613;
-    font-size: 14px;
- }
- .ac-details h3{
-     margin: 0;
-    font-family: 'Varela Round';
-    font-size: 16px;
-    color: #1da1f2;
- }
- .acc-details h5{
-   margin: 0;
-    font-family: 'Varela Round';
-    color: #fc3613;
-    font-size: 14px;
-    margin-left: 12px;
- }
- .acc-details{
-   margin-left: 10px;
- }
- .movies-english-header{
-    height: 34px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(76 71 71);
-    border: 3px solid #443c3c;
-  }
-  .movies-english-header h1{
-    color: #f9f9f9;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-  }
-  a{
-    text-decoration: none;
-  }
+    padding: 5px;
+    justify-content: center;
+}
+.best-movies-header h1{
+  font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+}
+.best-movies-tittle{
+    display: flex;
+    align-items: center;
+    font-family: 'varela round';
+}
+.best-movies-tittle h2{
+  margin: 0;
+  font-size: 18px;
+}
+.best-movies-tittle h4{
+    margin: 0;
+    font-size: 13px;
+    font-family: 'Varela Round';
+    font-weight: 500;
+    margin-left: 1%;
+}
+.fa-imdb{
+  color: black;
+  font-size: 18px;
+  margin-right: 6px;
+    margin-left: 15px;
+}
+.fa-star{
+  color: #fc3613;
+  font-size: 14px;
+}
+
   </style>
 
 
-
+<div class="best-movies-header">
+  <h1>Best 10 Stock Market Movies</h1>
+</div>
 <div class="main">
-  <div class="movies-english-header"><h1>Dimple Hayati</h1></div>
-  <div class="actor-pic">
-    <a href="/images/actor-posters/{{actor._id}}.jpg">
-     <img src="617d348e568e4ac9da48c40e.jpg" alt="{{actor.actorname}} Image">
-    </a>
-    
-  </div>
-  <div class="actor-social-media"> 
-   <a href="{{actor.instalink}}" class="round-40 connect-instagramm"><i class="fa fa-instagram" aria-hidden="true"></i></a>
- <a href="{{actor.twitlink}}" class="round-40 connect-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-  </div>
-  <div class="actor-details">
-      <div class="ac-details">
-      <h4>Name :</h4>
-      <h3>Dimple Hayati</h3>
-    </div>
-     <div class="ac-details">
-      <h4>Age :</h4>
-      <h5>18</h5>
-    </div>
-    <div class="ac-details">
-      <h4>Born :</h4>
-      <h5>18 october 2111</h5>
-    </div>
-    <div class="ac-details">
-      <h4>Occupation :</h4>
-      <h5>Actress</h5>
-    </div>
-    <div class="ac-details">
-      <h4>Language :</h4>
-      <h5>Malayalam</h5>
-    </div>
-    <div class="ac-details">
-      <h4>Year Of Active :</h4>
-      <h5>2018</h5>
-    </div>
-   
-    <div class="acc-details">
-        
-            <div class="basic-head"><h4>Biography</h4></div>
-            <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus voluptatibus perferendis, consequatur nisi eos nobis harum perspiciatis blanditiis. Ex assumenda vero architecto sed eius. Excepturi accusantium nobis praesentium? Eveniet error quia doloribus eius tenetur, nihil sed ut debitis molestias inventore, repudiandae, molestiae voluptatibus iure voluptatum. Placeat aliquid iste, officia eos corrupti in sunt perspiciatis dicta perferendis quae! Earum facilis incidunt ducimus consequuntur corrupti quam quas dolor. Ullam veritatis est sed maiores suscipit, sit corporis nam labore quam temporibus ratione tempora ad minima, modi iusto in obcaecati voluptatibus vero? Reprehenderit id explicabo nisi at eveniet accusamus facere facilis quia nesciunt incidunt?</h5>
-  
-      <h4>Bio :</h4>
-      <h5>
-      </h5>
+  <div class="best-movies">
+    <div class="best-movies-tittle">
+      <h2>10.Equity(2016)</h2>
+      <i class="fab fa-imdb"></i><i class="fas fa-star"></i><h4>5.5(3,575 votes)</h4>
     </div>
   </div>
 </div>
