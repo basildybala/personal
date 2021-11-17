@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/410a50dbac.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script> -->
+    
     <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="styleee.css">
-    <script src="ad.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
+    
 </head>
 <body>
   <style>
@@ -119,7 +120,7 @@
       <i class="fab fa-imdb"></i><i class="fas fa-star"></i><h4>5.5(3,575 votes)</h4>
     </div>
     <div class="best-movies-img">
-      <img src="stock market/Equity.jpg" alt="Equity Movie Poster" srcset="">
+      <img class="lazy-photo" data-src="stock market/Equity.jpg" alt="Equity Movie Poster" srcset="">
     </div>
     <div class="basic-head">
       <h4>Details</h4>
@@ -147,7 +148,7 @@
         <p>Naomi Bishop, a Wall Street investment banker, tries to climb the corporate ladder while being monitored by Samantha Ryan, a prosecutor who suspects her of corruption.</p>
       </div>
       <div class="youtube-trailer">
-        <iframe class="lazy-photo" src="https://www.youtube.com/embed/Xg2TSp5tJy4" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+        <iframe class="lazy-photo" data-src="https://www.youtube.com/embed/Xg2TSp5tJy4" frameborder="0" allow="autoplay" allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -174,4 +175,5 @@
      
    
     </body>
+    <script src="ad.js"></script>
 </html>
