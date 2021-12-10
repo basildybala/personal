@@ -72,10 +72,10 @@ body{
     height: 180px;
     border: 1px solid rgba(0,0,0,.14);
     /* box-shadow: 0 1px 1px rgb(0 0 0 / 10%); */
-    /* box-shadow: 0 -1px 3px  #1CD6FF;
-    background: #3D3D3D;  */
-    box-shadow: 0 0px 1px #1cd6ff;
-    background: #3d3d3d61;  
+    box-shadow: 0 -1px 3px  #1CD6FF;
+    background: #3D3D3D; 
+    /* box-shadow: 0 0px 1px #1cd6ff;
+    background: #3d3d3d61;   */
     overflow: hidden;
 }
 .movies-img{
