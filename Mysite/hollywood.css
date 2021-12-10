@@ -125,3 +125,29 @@ body{
     font-size: 11px;
     font-family: 'Varela Round';
 }
+.black-header{
+    /* background-color: rgb(76 71 71); */
+    background: #3D3D3D; 
+    /* width: 96%; */
+    height: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px 12px;
+    border: 1px solid #1cd6ff4f;
+}
+.black-header i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+.black-header h1{
+    margin: 0;
+    color: white;
+    opacity: 76%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
