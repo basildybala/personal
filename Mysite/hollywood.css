@@ -189,6 +189,14 @@ body{
 .movie-details-section{
     padding: 10px;
 }
-.movie-tittle{display: flex;}
-.movie-tittle h1{margin: 0;font-size: 16px;color: var(--main-blue-color);opacity: 70%;font-family: 'varela round';}
-.movie-tittle i{color: white;margin-top: 0px;margin-right: 5px;}
+.movie-tittle{display: flex;align-items: center;padding: 5px;}
+.movie-tittle h1{margin: 0;font-size: 18px;color: white;opacity: 89%;font-family: 'varela round';}
+.movie-tittle i{color: var(--main-blue-color);margin-right: 5px;opacity: 89%;}
+.movie-cast{display: flex;padding: 5px;}
+.movie-cast i{color: white;margin-top: 1px;margin-right: 5px;font-size: 14px; opacity: 62%;}
+.movie-cast h4{color: white;opacity: 19%;margin: 0;font-family: 'varela round';font-size: 13px;margin-left: 4px;letter-spacing: 0.5px;}
+.movie-genre h4{ margin: 0;font-size: 14px;color: white;font-family: 'Varela Round';opacity: 23%;margin-left: 12px;}
+.movie-genre{    display: flex;align-items: center;justify-content: flex-start;margin-left: 9px;padding: 5px;}
+.release-date{display: flex;align-items: center;padding: 5px;}
+.release-date h4{ margin: 0;font-size: 14px;color: white;font-family: 'Varela Round';opacity: 23%;margin-left: 4px;}
+.release-date i{color: white;margin-right: 5px;font-size: 14px; opacity: 62%;}
