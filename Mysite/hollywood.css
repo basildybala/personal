@@ -216,6 +216,17 @@ body{
     flex-direction: column;
     justify-content: center;
 }
+.movie-trailer-btn{
+    width: 90%;
+    height: 25px;
+    background: var(--main-blue-color);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    opacity: 89%;
+    cursor: pointer;
+    margin-left: 5%;
+}
 .movie-tittle{display: flex;padding: 3px;}
 .movie-tittle h4{margin: 0;font-weight: 400;color: #a3a3a3;font-size: 16px;font-family: 'varela round';letter-spacing: .03em;flex-shrink: 0;}
 .movie-tittle h1{margin: 0;font-size: 15px;color: white;opacity: 89%;font-family: 'varela round';margin-left: 5px;letter-spacing: .03em;}
