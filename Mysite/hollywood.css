@@ -223,14 +223,15 @@ body{
     height: 25px;
     background: var(--main-blue-color);
     border: none;
-    border-radius: 15px;
+    border-radius: 4px;
     color: white;
+    font-weight: bold;
     opacity: 89%;
     cursor: pointer;
     margin-left: 5%;
 }
 .small-head{
-    margin: 5px 0px 11px 5px;
+    margin: 5px 0px 5px 5px;
 }
 .small-head h3{color: white;opacity: 89%; font-size: 18px;
     font-family: sans-serif;
@@ -239,7 +240,7 @@ body{
     letter-spacing: 0.3px;
     font-weight: 600;
     margin-left: 5px}
-
+.small-head h3 span{color: var(--main-blue-color);}
 .movie-tittle{display: flex;padding: 3px;}
 .movie-tittle h4{margin: 0;font-weight: 400;color: #a3a3a3;font-size: 16px;font-family: 'varela round';letter-spacing: .03em;flex-shrink: 0;}
 .movie-tittle h1{margin: 0;font-size: 15px;color: white;opacity: 89%;font-family: 'varela round';margin-left: 5px;letter-spacing: .03em;}
@@ -254,3 +255,5 @@ body{
 .details-col{display: flex;/* margin: 10px 0px 0px 10px; */padding: 5px;margin-left: 5px;}
 .details-col h4{margin: 0;color: #fff;font-size: 15px;opacity: 79%;flex-shrink: 0;font-family: sans-serif;font-weight: 500;letter-spacing: 0.3px;}
 .details-col p{margin: 0 0 0 7px;color: #fff;opacity: 49%;font-family: sans-serif;letter-spacing: 0.3px;}
+.story h5{margin: 0 0 0 10px;color: #fff;opacity: 49%;font-family: sans-serif;letter-spacing: 0.5px;font-size: 16px;font-weight: 400;line-height: 22px;}
+.story h6{margin: 0 0 0 10px;color: #fff;opacity: 49%;font-family: sans-serif;letter-spacing: 0.5px;font-size: 16px;font-weight: 400;text-indent: 35px;line-height: 22px;}
