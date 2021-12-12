@@ -170,8 +170,9 @@ body{
     margin: 0;
     color: var(--main-blue-color);
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    letter-spacing: 0.4px;
+    font-family: 'Varela Round';
 }
 .black-header i {
     margin-right: 5px;
@@ -182,9 +183,11 @@ body{
     color: white;
     opacity: 76%;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    letter-spacing: 0.4px;
+    font-family: 'Varela Round';
 }
+
 .main{
     overflow: hidden;
     width: 98%;
@@ -209,15 +212,18 @@ body{
 }
 .movie-details-section{
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.movie-tittle{display: flex;padding: 5px;}
+.movie-tittle{display: flex;padding: 3px;}
 .movie-tittle h4{margin: 0;font-weight: 400;color: #a3a3a3;font-size: 16px;font-family: 'varela round';letter-spacing: .03em;flex-shrink: 0;}
 .movie-tittle h1{margin: 0;font-size: 15px;color: white;opacity: 89%;font-family: 'varela round';margin-left: 5px;letter-spacing: .03em;}
 .movie-tittle i{color: var(--main-blue-color);margin-right: 5px;opacity: 89%;}
-.movie-details h4{ margin: 0;font-size: 13px;color: #fff;font-family: 'Varela Round';opacity: 89%;margin-left: 8px;}
-.movie-details h3{margin: 0;font-weight: 400;font-size: 14px;color: #a3a3a3;font-family: 'varela round';letter-spacing: .03em;flex-shrink: 0;}
+.movie-details h4{ margin: 0;font-size: 13px;line-height: 22px;letter-spacing: 0.4px; color: #fff;font-family: 'Varela Round';opacity: 89%;margin-left: 8px;}
+.movie-details h3{margin: 0;font-weight: 400;line-height: 22px; font-size: 14px;color: #a3a3a3;font-family: 'varela round';letter-spacing: .03em;flex-shrink: 0;}
 .movie-cast h3{margin: 0;font-weight: 400;font-size: 15px;opacity: 89%;color: white;font-family: 'varela round';letter-spacing: .03em;}
-.movie-details{    display: flex;justify-content: flex-start;padding: 5px;}
+.movie-details{    display: flex;justify-content: flex-start;padding: 4px;}
 .release-date{display: flex;align-items: center;padding: 5px;}
 .release-date h4{ margin: 0;font-size: 14px;color: white;font-family: 'Varela Round';opacity: 23%;margin-left: 4px;}
 .release-date i{color: white;margin-right: 5px;font-size: 14px; opacity: 62%;}
