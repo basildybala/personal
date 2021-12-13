@@ -175,6 +175,15 @@ body{
     letter-spacing: 0.4px;
     font-family:sans-serif;
 }
+.black-movie-header h1 i{
+    color: var(--main-blue-color);
+    margin: 6px 6px 00 0;
+    size: 16px;
+}
+.small-head h3 i {
+    color: var(--main-blue-color);
+    margin: 1px 2px 0 0;
+}
 .black-header i {
     margin-right: 5px;
     font-size: 20px;
