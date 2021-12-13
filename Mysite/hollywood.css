@@ -168,11 +168,12 @@ body{
 }
 .black-movie-header h1{
     margin: 0;
-    color: var(--main-blue-color);
+    color: #fff;
+    opacity: 89%;
     font-weight: bold;
     font-size: 16px;
     letter-spacing: 0.4px;
-    font-family: 'Varela Round';
+    font-family:sans-serif;
 }
 .black-header i {
     margin-right: 5px;
@@ -216,7 +217,6 @@ body{
     padding: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .movie-trailer-btn{
     width: 90%;
@@ -229,6 +229,7 @@ body{
     opacity: 89%;
     cursor: pointer;
     margin-left: 5%;
+    margin-top: 15px;
 }
 .small-head{
     margin: 5px 0px 5px 5px;
@@ -242,11 +243,12 @@ body{
     margin-left: 5px}
 .small-head h3 span{color: var(--main-blue-color);}
 .movie-tittle{display: flex;padding: 3px;}
-.movie-tittle h4{margin: 0;font-weight: 400;color: #a3a3a3;font-size: 16px;font-family: 'varela round';letter-spacing: .03em;flex-shrink: 0;}
-.movie-tittle h1{margin: 0;font-size: 15px;color: white;opacity: 89%;font-family: 'varela round';margin-left: 5px;letter-spacing: .03em;}
+.movie-tittle h4{margin: 0;color: #fff;font-size: 15px;opacity: 79%;flex-shrink: 0;font-family: sans-serif;font-weight: 500;letter-spacing: 0.3px;}
+.movie-tittle h1{margin: 0;font-size: 15px;margin-left: 5px;color: #fff;opacity: 49%;font-family: sans-serif;letter-spacing: 0.3px;}
 .movie-tittle i{color: var(--main-blue-color);margin-right: 5px;opacity: 89%;}
-.movie-details h4{ margin: 0;font-size: 13px;line-height: 22px;letter-spacing: 0.4px; color: #fff;font-family: 'Varela Round';opacity: 89%;margin-left: 8px;}
-.movie-details h3{margin: 0;font-weight: 400;line-height: 22px; font-size: 14px;color: #a3a3a3;font-family: 'varela round';letter-spacing:0.1px;flex-shrink: 0;}
+.movie-details h4{ 
+   line-height: 22px;font-weight: 500; margin: 0 0 0 5px;font-size: 13px;color: #fff;opacity: 49%;font-family: sans-serif;letter-spacing: 0.3px;}
+.movie-details h3{margin: 0;color: #fff;font-size: 14px;opacity: 79%;flex-shrink: 0;font-family: sans-serif;font-weight: 500;letter-spacing: 0.3px;line-height: 22px;}
 /* .movie-cast h3{margin: 0;font-weight: 400;font-size: 15px;opacity: 89%;color: white;font-family: 'varela round';letter-spacing: .03em;} */
 .movie-details{    display: flex;justify-content: flex-start;padding: 4px;}
 /* .release-date{display: flex;align-items: center;padding: 5px;}
