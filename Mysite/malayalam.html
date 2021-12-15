@@ -8,13 +8,30 @@
   <link rel="stylesheet" href="hollywood.css">
 </head>
 <body>
+
   <div class="heading">
    <a href="" class="heading-text"> <h1>CINEMA<span>DT</span></h1><span>.COM</span></a>
-    
   </div>
+<!---------------------------------------------Nav Bar--------->
+          <div class="black-back">
+            <div class="nav-bar-sticky ">      
+              <ul>
+                <div class="nav-swiper">
+                <li><a href="/" title="Home Page">OverView</a></li>
+                <li><a href="/malayalam-movies" title="Malayalam Movies Page">Home</a></li>
+                <li><a href="/tamil-movies" title="Tamil Movies Page">Actor</a></li>
+                <li><a href="/hindi-movies" title="Hindi Movies Page">Actoress</a></li>
+                <li><a href="/telugu-movies" title="Telugu Movies Page">Videos</a></li>
+                <li><a href="/hollywood-movies" title="Hollywood Movies Page">Hollywood</a></li>
+                <li><a href="/web-series" title="Web Series">WebSeries</a></li>
+                <li><a href="/other-movies" title="Other Movies Page">Other</a></li>
+              </div>
+              </ul>
+            </div>
+          </div>
 
      <!-----------------------------------Latest Update------------------------------------------>
-     <div class="black-header"style="margin-top: 300px;">
+     <div class="black-header"style="margin-top: 300px;" id="contact">
       <i class="fas fa-pen-alt"></i>
       <h1>Latest Update</h1>
     </div>
@@ -67,6 +84,7 @@
         </a>
       </div>
     </div>
+
 <!---------------------------------------------Movie Section------------->
 
 
@@ -96,11 +114,12 @@
             <h3>Release :</h3>
             <h4>21 September 2022</h4>
           </div>
-          <button class="movie-trailer-btn">Watch Trailer</button>
+          <!-- <button class="movie-trailer-btn">Watch Trailer</button> -->
+          <button class="movie-trailer">Watch Trailor</button>
         </div>
       </div>
       <div class="small-head">
-        <h3> <i class="fa fa-info" aria-hidden="true"></i> Details</h3>
+        <h3> <i class="fa fa-info-circle" aria-hidden="true"></i> Details</h3>
       </div>
       <div class="movie-details-one">
         <div class="details-col">
@@ -142,50 +161,43 @@
           <div class="movie-actor">
             <a href="#">
             <img class="lazy-photo" data- src="oscar-movies/619dc25dc2f3bde9c5856350.jpg"alt="{{movie.actorname1}}.jpg"/>
-            <h6>Thamanna</h6>
-            <p>Maya</p>
+            <h6>Thamanna</h6><p>Maya</p>
             </a>
           </div>
           <div class="movie-actor">
             <a href="#">
               <img class="lazy-photo" data- src="oscar-movies/61ab183074a76eaff59687df.jpg"alt="{{movie.actorname1}}.jpg"/>
-              <h6>Kajal Agarwal</h6>
-              <p>Miya</p>
+              <h6>Kajal Agarwal</h6><p>Miya</p>
             </a>
           </div>
           <div class="movie-actor">
             <a href="#" >
               <img class="lazy-photo" data- src="oscar-movies/61ab96e074a76eaff59687e2.jpg"alt="{{movie.actorname1}}.jpg"/>
-              <h6>Nina Debrow</h6>
-              <p>Nina</p>
+              <h6>Nina Debrow</h6><p>Nina</p>
             </a>
           </div>
           <div class="movie-actor">
             <a href="#" >
               <img class="lazy-photo" data- src="oscar-movies/61b0af1b571e50ff0ceb0e43.jpg"alt="{{movie.actorname1}}.jpg"/>
-              <h6>Dizooosasdddd dddddddddssssssssss</h6>
-              <p>Disosmans</p>
+              <h6>Dizooosasdddd dddddddddssssssssss</h6><p>Disosmans</p>
             </a>
           </div>
           <div class="movie-actor">
             <a href="#" >
               <img class="lazy-photo" data- src="oscar-movies/61b0af61571e50ff0ceb0e44.jpg"alt="{{movie.actorname1}}.jpg"/>
-              <h6>Alexandra</h6>
-              <p>Rani</p>
+              <h6>Alexandra</h6><p>Rani</p>
             </a>
           </div>
           <div class="movie-actor">
             <a href="#" >
               <img class="lazy-photo" data- src="oscar-movies/619dc25dc2f3bde9c5856350.jpg"alt="{{movie.actorname1}}.jpg"/>
-              <h6>Samantha</h6>
-              <p>Chopra</p>
+              <h6>Samantha</h6><p>Chopra</p>
             </a>
-          </div>
-          
+          </div> 
         </div>
       </div>
     </div>
-      
+
       
        <!-----------------------------------Video Section----------------------------->
        <div class="small-head">
@@ -206,10 +218,54 @@
                 </div>
             </div>
         </div>
-
-
         <div class="vc" style="margin-top: 100px;">
 
+        </div>
+
+        <!-------------------------------------------------Actor-------------------------------->
+        <div class="actor-section">
+          <div class="actor-header"><h1><i class="fa fa-user" aria-hidden="true"></i> Nina Debrov</h1></div>
+          <a href="#" class="actor-img"><img src="oscar-movies/61ab183074a76eaff59687df.jpg" alt="" srcset=""></a>
+          <div class="actor-social-media"> 
+            <div class="social-icons">
+              <a href="{{actor.instalink}}" class="round-40 connect-instagramm"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="{{actor.twitlink}}" class="round-40 connect-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+           </div>
+           </div>
+          <div class="actor-details">
+            <div class="ac-details">
+            <h4>Name :</h4>
+            <h3>Nina Deborw</h3>
+          </div>
+           <div class="ac-details">
+            <h4>Age :</h4>
+            <p id="placeholder">65</p>
+          </div>
+          <div class="ac-details">
+            <h4>Born :</h4>
+            <p>23 10 1997</p>
+          </div>
+          <div class="ac-details">
+            <h4>Occupation :</h4>
+            <p>Actress</p>
+          </div> 
+          <div class="ac-details">
+            <h4>Language :</h4>
+            <p>English</p>
+          </div>
+          <div class="ac-details">
+            <h4>Year Of Active :</h4>
+            <p>2005</p>
+          </div>
+         
+          <div class="acc-details">
+                  <h3><i class="fa fa-info-circle" aria-hidden="true"></i> Biography</h3></div>
+                  <div class="bio">
+                  <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi harum distinctio, ratione repellendus possimus soluta, magnam optio aperiam, eos accusamus mollitia corrupti provident deserunt veniam laudantium perferendis quaerat quam quisquam odio voluptates veritatis voluptatibus reprehenderit eius. Cupiditate rem cum laudantium exercitationem iste sed modi porro velit praesentium! Quas quia qui ex repudiandae repellendus! Porro, beatae commodi facilis repudiandae obcaecati ipsam?
+                  </h5></div>
+              
+          </div>
+        </div>
         </div>
 
 
