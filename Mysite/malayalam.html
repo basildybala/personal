@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hollywood</title>
   <link rel="stylesheet" href="hollywood.css">
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
 </head>
 <body>
 
@@ -39,7 +40,7 @@
       <div class="latest-movies-section">
         <a href="#" class="movies-list" title="{{this.engname}} Page">
           <div class="movies-img">
-            <img src="oscar-movies/A-beatiful-minfd.jpg" class="lazy-photo" alt="{{this.engname}}.jpg" srcset="">
+            <img  data-src="oscar-movies/A-beatiful-minfd.jpg" class="lazy-photo" alt="{{this.engname}}.jpg" srcset="">
           </div>
         <div class="movies-body">
           <h4>A beatiful minfd</h4>
@@ -160,37 +161,37 @@
         <div class="actors-swipe">
           <div class="movie-actor">
             <a href="#">
-            <img class="lazy-photo" data- src="oscar-movies/619dc25dc2f3bde9c5856350.jpg"alt="{{movie.actorname1}}.jpg"/>
+            <img class="lazy-photo" data-src="oscar-movies/619dc25dc2f3bde9c5856350.jpg"alt="{{movie.actorname1}}.jpg"/>
             <h6>Thamanna</h6><p>Maya</p>
             </a>
           </div>
           <div class="movie-actor">
             <a href="#">
-              <img class="lazy-photo" data- src="oscar-movies/61ab183074a76eaff59687df.jpg"alt="{{movie.actorname1}}.jpg"/>
+              <img class="lazy-photo" data-src="oscar-movies/61ab183074a76eaff59687df.jpg"alt="{{movie.actorname1}}.jpg"/>
               <h6>Kajal Agarwal</h6><p>Miya</p>
             </a>
           </div>
           <div class="movie-actor">
             <a href="#" >
-              <img class="lazy-photo" data- src="oscar-movies/61ab96e074a76eaff59687e2.jpg"alt="{{movie.actorname1}}.jpg"/>
+              <img class="lazy-photo" data-src="oscar-movies/61ab96e074a76eaff59687e2.jpg"alt="{{movie.actorname1}}.jpg"/>
               <h6>Nina Debrow</h6><p>Nina</p>
             </a>
           </div>
           <div class="movie-actor">
             <a href="#" >
-              <img class="lazy-photo" data- src="oscar-movies/61b0af1b571e50ff0ceb0e43.jpg"alt="{{movie.actorname1}}.jpg"/>
+              <img class="lazy-photo" data-src="oscar-movies/61b0af1b571e50ff0ceb0e43.jpg"alt="{{movie.actorname1}}.jpg"/>
               <h6>Dizooosasdddd dddddddddssssssssss</h6><p>Disosmans</p>
             </a>
           </div>
           <div class="movie-actor">
             <a href="#" >
-              <img class="lazy-photo" data- src="oscar-movies/61b0af61571e50ff0ceb0e44.jpg"alt="{{movie.actorname1}}.jpg"/>
+              <img class="lazy-photo" data-src="oscar-movies/61b0af61571e50ff0ceb0e44.jpg"alt="{{movie.actorname1}}.jpg"/>
               <h6>Alexandra</h6><p>Rani</p>
             </a>
           </div>
           <div class="movie-actor">
             <a href="#" >
-              <img class="lazy-photo" data- src="oscar-movies/619dc25dc2f3bde9c5856350.jpg"alt="{{movie.actorname1}}.jpg"/>
+              <img class="lazy-photo" data-src="oscar-movies/619dc25dc2f3bde9c5856350.jpg"alt="{{movie.actorname1}}.jpg"/>
               <h6>Samantha</h6><p>Chopra</p>
             </a>
           </div> 
@@ -207,14 +208,14 @@
               <div class="swiper">
                 <!-- {{#if movie.ytlink}} -->
                 <div class="video-row">
-                  <iframe class="lazy-photo" data- src="https://www.youtube.com/embed/LeihQN5mCRA" frameborder="0"allow="autoplay"allowfullscreen></iframe>
+                  <iframe class="lazy-photo" data-src="https://www.youtube.com/embed/LeihQN5mCRA" frameborder="0"allow="autoplay"allowfullscreen></iframe>
                 </div>
               <!-- {{else}}
                 <h4 style="color: black;font-family:sans-serif">Videos Not Release</h4> -->
               <!-- {{/if}}
               {{#if movie.ytlink1}} -->
                 <div class="video-row">
-                  <iframe class="lazy-photo" data- src="https://www.youtube.com/embed/LeihQN5mCRA"frameborder="0" allow="autoplay"allowfullscreen></iframe>
+                  <iframe class="lazy-photo" data-src="https://www.youtube.com/embed/LeihQN5mCRA"frameborder="0" allow="autoplay"allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -225,7 +226,7 @@
         <!-------------------------------------------------Actor-------------------------------->
         <div class="actor-section">
           <div class="actor-header"><h1><i class="fa fa-user" aria-hidden="true"></i> Nina Debrov</h1></div>
-          <a href="#" class="actor-img"><img src="oscar-movies/61ab183074a76eaff59687df.jpg" alt="" srcset=""></a>
+          <a href="#" class="actor-img"><img class="lazy-photo" data-src="oscar-movies/61ab183074a76eaff59687df.jpg" alt="" srcset=""></a>
           <div class="actor-social-media"> 
             <div class="social-icons">
               <a href="{{actor.instalink}}" class="round-40 connect-instagramm"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -273,14 +274,14 @@
 
     <div class="sticky-ad">
       
-      <div class="ad-center">
+      <div class="ad-center-sticky">
         <span id='close' onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'><i class="fa fa-times" aria-hidden="true"></i></span>
         sdFakjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjsh
         
       </div>
     </div>
 
-   
+   <script src="ad.js"></script>
     <script src="https://kit.fontawesome.com/410a50dbac.js" crossorigin="anonymous"></script>
 </body>
 </html>
