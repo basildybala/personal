@@ -6,291 +6,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hollywood</title>
   <link rel="stylesheet" href="hollywood.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
 </head>
 <body>
-
-  <div class="heading">
-   <a href="" class="heading-text"> <h1>CINEMA<span>DT</span></h1><span>.COM</span></a>
+  
+  
+  
+  <!-- <div class="container">
+    <div class="tag-container">
+      
+      <input type="text">
+    </div>
   </div>
-<!---------------------------------------------Nav Bar--------->
-          <div class="black-back">
-            <div class="nav-bar-sticky ">      
-              <ul>
-                <div class="nav-swiper">
-                <li><a href="/" title="Home Page">OverView</a></li>
-                <li><a href="/malayalam-movies" title="Malayalam Movies Page">Home</a></li>
-                <li><a href="/tamil-movies" title="Tamil Movies Page">Actor</a></li>
-                <li><a href="/hindi-movies" title="Hindi Movies Page">Actoress</a></li>
-                <li><a href="/telugu-movies" title="Telugu Movies Page">Videos</a></li>
-                <li><a href="/hollywood-movies" title="Hollywood Movies Page">Hollywood</a></li>
-                <li><a href="/web-series" title="Web Series">WebSeries</a></li>
-                <li><a href="/other-movies" title="Other Movies Page">Other</a></li>
-              </div>
-              </ul>
-            </div>
-          </div>
-
-     <!-----------------------------------Latest Update------------------------------------------>
-     <div class="black-header"style="margin-top: 300px;" id="contact">
-      <i class="fas fa-pen-alt"></i>
-      <h1>Latest Update</h1>
+  
+  
+  <div class="tag">
+    <span>Javascript</span>
+    <i class="fa fa-times" aria-hidden="true"></i>
+  </div> -->
+  
+  
+  <div class="container">
+    Press enter after you typed.
+    <br />
+    <br />
+    <div class="tag-container">
+      <input id="tagss"  />  
     </div>
-    <div class="swiper" >
-      <div class="latest-movies-section">
-        <a href="#" class="movies-list" title="{{this.engname}} Page">
-          <div class="movies-img">
-            <img  data-src="oscar-movies/A-beatiful-minfd.jpg" class="lazy-photo" alt="{{this.engname}}.jpg" srcset="">
-          </div>
-        <div class="movies-body">
-          <h4>A beatiful minfd</h4>
-          <h6>English</h6>
-        </div>  
-        </a>
-        <a href="#" class="movies-list" title="{{this.engname}} Page">
-          <div class="movies-img">
-            <img src="oscar-movies/American-Beauty.jpg" class="lazy-photo" alt="{{this.engname}}.jpg" srcset="">
-          </div>
-        <div class="movies-body">
-          <h4>American Beauty</h4>
-          <h6>English</h6>
-        </div>  
-        </a>
-        <a href="#" class="movies-list" title="{{this.engname}} Page">
-          <div class="movies-img">
-            <img src="oscar-movies/Argo.jpg" class="lazy-photo" alt="{{this.engname}}.jpg" srcset="">
-          </div>
-        <div class="movies-body">
-          <h4>Argo</h4>
-          <h6>English</h6>
-        </div>  
-        </a>
-        <a href="#" class="movies-list" title="{{this.engname}} Page">
-          <div class="movies-img">
-            <img src="oscar-movies/Artist.jpg" class="lazy-photo" alt="{{this.engname}}.jpg" srcset="">
-          </div>
-        <div class="movies-body">
-          <h4>American</h4>
-          <h6>English</h6>
-        </div>  
-        </a>
-        <a href="#" class="movies-list" title="{{this.engname}} Page">
-          <div class="movies-img">
-            <img src="oscar-movies/Birdman.jpg" class="lazy-photo" alt="{{this.engname}}.jpg" srcset="">
-          </div>
-        <div class="movies-body">
-          <h4>Spider Man is hero On Amrer</h4>
-          <h6>English</h6>
-        </div>  
-        </a>
-      </div>
-    </div>
-
-<!---------------------------------------------Movie Section------------->
-
-
-    <div class="main">
-      <div class="black-movie-header">
-        <h1><i class="fa fa-video-camera" aria-hidden="true"></i> A Beautiful Mind</h1>
-      </div>
-      <div class="movie-section">
-        <a href="#" class="movie-image-section">
-          <img src="oscar-movies/A-beatiful-minfd.jpg" alt="" srcset="">
-        </a>
-        <div class="movie-details-section">
-          <div class="movie-tittle">
-            <h4>Name :</h4>
-            <h1>A Beautiful Mind</h1>
-          </div>
-          <div class="movie-details">
-            <h3>Genre :</h3>
-            <h4>Action | Drama</h4>
-          </div>
-          <div class="movie-details">
-            <h3>Cast :</h3>
-            <h4>Nina Debrov, Willioms, Jhon Cena, Shaker</h4>
-          </div>
-         
-          <div class="movie-details">
-            <h3>Release :</h3>
-            <h4>21 September 2022</h4>
-          </div>
-          <!-- <button class="movie-trailer-btn">Watch Trailer</button> -->
-          <button class="movie-trailer">Watch Trailor</button>
-        </div>
-      </div>
-      <div class="small-head">
-        <h3> <i class="fa fa-info-circle" aria-hidden="true"></i> Details</h3>
-      </div>
-      <div class="movie-details-one">
-        <div class="details-col">
-          <h4>Language :</h4>
-          <p>English</p>
-        </div>
-        <div class="details-col">
-          <h4>Release Date :</h4>
-          <p>12 December 2022</p>
-        </div>
-        <div class="details-col">
-          <h4>Directed by :</h4>
-          <p>James cameroon</p>
-        </div>
-        <div class="details-col">
-          <h4>Written by :</h4>
-          <p>Mike hops</p>
-        </div>
-        <div class="details-col">
-          <h4>Produced by :</h4>
-          <p>Jack cameroon</p>
-        </div>
-      </div>
-      <div class="small-head">
-        <h3><i class="fa fa-file-text-o" aria-hidden="true"></i> Story</h3>
-      </div>
-      <div class="story">
-        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minus omnis assumenda at voluptates molestiae. Odio expedita distinctio voluptate praesentium molestiae, ipsam facilis odit iste pariatur officia, quos, incidunt minus accusantium animi sint voluptatum perferendis facere! Unde aliquam recusandae aspernatur illum in error enim sint voluptas at, itaque, voluptates mollitia.</h5>
-
-        <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro soluta totam autem perspiciatis ex, sunt similique cumque minus, repellendus, cum explicabo deserunt labore delectus ab. Nulla saepe inventore quidem impedit exercitationem incidunt rem! Error soluta itaque quibusdam optio voluptate unde, atque ut dolorem quisquam odio dignissimos assumenda dicta inventore suscipit, rerum cumque omnis ipsum fugiat recusandae sapiente sit est obcaecati.</h6>
-      </div>
-      <!-----------------------------------Actors------------------------->
-      <div class="small-head">
-        <h3><i class="fa fa-user" aria-hidden="true"></i> Actors</h3>
-      </div>
-      <div class="actor-swiper">
-      <div class="swiper">
-        <div class="actors-swipe">
-          <div class="movie-actor">
-            <a href="#">
-            <img class="lazy-photo" data-src="oscar-movies/619dc25dc2f3bde9c5856350.jpg"alt="{{movie.actorname1}}.jpg"/>
-            <h6>Thamanna</h6><p>Maya</p>
-            </a>
-          </div>
-          <div class="movie-actor">
-            <a href="#">
-              <img class="lazy-photo" data-src="oscar-movies/61ab183074a76eaff59687df.jpg"alt="{{movie.actorname1}}.jpg"/>
-              <h6>Kajal Agarwal</h6><p>Miya</p>
-            </a>
-          </div>
-          <div class="movie-actor">
-            <a href="#" >
-              <img class="lazy-photo" data-src="oscar-movies/61ab96e074a76eaff59687e2.jpg"alt="{{movie.actorname1}}.jpg"/>
-              <h6>Nina Debrow</h6><p>Nina</p>
-            </a>
-          </div>
-          <div class="movie-actor">
-            <a href="#" >
-              <img class="lazy-photo" data-src="oscar-movies/61b0af1b571e50ff0ceb0e43.jpg"alt="{{movie.actorname1}}.jpg"/>
-              <h6>Dizooosasdddd dddddddddssssssssss</h6><p>Disosmans</p>
-            </a>
-          </div>
-          <div class="movie-actor">
-            <a href="#" >
-              <img class="lazy-photo" data-src="oscar-movies/61b0af61571e50ff0ceb0e44.jpg"alt="{{movie.actorname1}}.jpg"/>
-              <h6>Alexandra</h6><p>Rani</p>
-            </a>
-          </div>
-          <div class="movie-actor">
-            <a href="#" >
-              <img class="lazy-photo" data-src="oscar-movies/619dc25dc2f3bde9c5856350.jpg"alt="{{movie.actorname1}}.jpg"/>
-              <h6>Samantha</h6><p>Chopra</p>
-            </a>
-          </div> 
-        </div>
-      </div>
-    </div>
-
-      
-       <!-----------------------------------Video Section----------------------------->
-       <div class="small-head">
-        <h3><i class="fa fa-youtube" aria-hidden="true"></i> Videos</h3>
-      </div>
-        <div class="video-swiper">
-              <div class="swiper">
-                <!-- {{#if movie.ytlink}} -->
-                <div class="video-row">
-                  <iframe class="lazy-photo" data-src="https://www.youtube.com/embed/LeihQN5mCRA" frameborder="0"allow="autoplay"allowfullscreen></iframe>
-                </div>
-              <!-- {{else}}
-                <h4 style="color: black;font-family:sans-serif">Videos Not Release</h4> -->
-              <!-- {{/if}}
-              {{#if movie.ytlink1}} -->
-                <div class="video-row">
-                  <iframe class="lazy-photo" data-src="https://www.youtube.com/embed/LeihQN5mCRA"frameborder="0" allow="autoplay"allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-        <div class="vc" style="margin-top: 100px;">
-
-        </div>
-
-        <!-------------------------------------------------Actor-------------------------------->
-        <div class="actor-section">
-          <div class="actor-header"><h1><i class="fa fa-user" aria-hidden="true"></i> Nina Debrov</h1></div>
-          <a href="#" class="actor-img"><img class="lazy-photo" data-src="oscar-movies/61ab183074a76eaff59687df.jpg" alt="" srcset=""></a>
-          <div class="actor-social-media"> 
-            <div class="social-icons">
-              <a href="{{actor.instalink}}" class="round-40 connect-instagramm"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-              <a href="{{actor.twitlink}}" class="round-40 connect-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-           </div>
-           </div>
-          <div class="actor-details">
-            <div class="ac-details">
-            <h4>Name :</h4>
-            <h3>Nina Deborw</h3>
-          </div>
-           <div class="ac-details">
-            <h4>Age :</h4>
-            <p id="placeholder">65</p>
-          </div>
-          <div class="ac-details">
-            <h4>Born :</h4>
-            <p>23 10 1997</p>
-          </div>
-          <div class="ac-details">
-            <h4>Occupation :</h4>
-            <p>Actress</p>
-          </div> 
-          <div class="ac-details">
-            <h4>Language :</h4>
-            <p>English</p>
-          </div>
-          <div class="ac-details">
-            <h4>Year Of Active :</h4>
-            <p>2005</p>
-          </div>
-         
-          <div class="acc-details">
-                  <h3><i class="fa fa-info-circle" aria-hidden="true"></i> Biography</h3></div>
-                  <div class="bio">
-                  <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi harum distinctio, ratione repellendus possimus soluta, magnam optio aperiam, eos accusamus mollitia corrupti provident deserunt veniam laudantium perferendis quaerat quam quisquam odio voluptates veritatis voluptatibus reprehenderit eius. Cupiditate rem cum laudantium exercitationem iste sed modi porro velit praesentium! Quas quia qui ex repudiandae repellendus! Porro, beatae commodi facilis repudiandae obcaecati ipsam?
-                  </h5></div>
-              
-          </div>
-        </div>
-        </div>
-
-
-    </div>
-
-    <!------------------------------------------------------END CONTAINER-->
-    <div class="end-container">
-      <div class="connect-social">
-        <div class="connect-text"><p>Connect us :</p></div>
-        <a href="https://www.instagram.com/dramalitecom" class="connect-icons"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      </div>
-      <div class="footer-privacy"><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-conditions">Terms & Conditions</a> |<a href="/contact">Contact us</a> </div>
-      <div class="end-copyright">
-        <i class="fa fa-copyright" aria-hidden="true"> </i>2021 Dramalite.om</div>
-    </div>
-
-    <!-- <div class="sticky-ad">
-      
-      <div class="ad-center-sticky">
-        <span id='close' onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'><i class="fa fa-times" aria-hidden="true"></i></span>
-        sdFakjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjsh
-        
-      </div>
-    </div> -->
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script>
+    $( function() {
+      var availableTags = [
+        "ActionScript",
+        "AppleScript",
+        "Asp",
+        "BASIC",
+        "C",
+        "C++",
+        "Clojure",
+        "COBOL",
+        "ColdFusion",
+        "Erlang",
+        "Fortran",
+        "Groovy",
+        "Haskell",
+        "Java",
+        "JavaScript",
+        "Lisp",
+        "Perl",
+        "PHP",
+        "Python",
+        "Ruby",
+        "Scala",
+        "Scheme"
+      ];
+      $( "#tagss" ).autocomplete({
+        source: availableTags,
+      });
+    } );
+    </script>
 
    <script src="ad.js"></script>
     <script src="https://kit.fontawesome.com/410a50dbac.js" crossorigin="anonymous"></script>
