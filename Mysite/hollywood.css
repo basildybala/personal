@@ -58,6 +58,7 @@ body{margin: 0;
 }
 .movie-cover-img{
     position: relative;
+    width: 100%;
 }
 .img-b{
     background: linear-gradient(0deg,var(--rich-black) 20px,transparent);
