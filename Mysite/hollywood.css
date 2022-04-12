@@ -59,6 +59,9 @@ body{margin: 0;
     width: 100%;
     height: 100%;
 }
+.main-movie{
+    width: 100%;
+}
 .movie-cover-img{
     position: relative;
     width: 100%;
@@ -83,15 +86,15 @@ body{margin: 0;
 .movie-poster img{width: 100%;object-fit: cover;opacity: 90%;}
 .movie-details{display: flex;flex-direction: column;padding: 7px;}
 .movie-details h1{font-size: 16px;font-family: 'Poppins', sans-serif;font-weight: 500;margin: 0;}
-.movie-details h3{    margin: 0;font-size: 11px;font-family: sans-serif;font-weight: 400;margin-top: 12px;}
-.movie-details h5{    margin: 0;font-size: 11px;font-family: sans-serif;font-weight: 400;margin-top: 7px;}
+.movie-details h3{    margin: 0;font-size: 11px;font-family: sans-serif;font-weight: 400;margin-top: 12px;opacity: 75%;}
+.movie-details h5{    margin: 0;font-size: 11px;font-family: sans-serif;font-weight: 400;margin-top: 7px;opacity: 75%;}
 .span-div{margin-top: 5px;}
-.span-div span{    border-radius: 80px;font-size: 12px;height: 14px;line-height: 15px;padding: 0 5px;background-color: #b0bec5;color: #000;display: inline-block;font-weight: 700;white-space: nowrap;font-family: sans-serif;margin-right: 5px;}
+.span-div span{    border-radius: 80px;font-size: 12px;height: 14px;line-height: 15px;padding: 0 5px;background-color: #b0bec5;color: #000;display: inline-block;font-weight: 700;white-space: nowrap;font-family: sans-serif;margin-right: 5px;opacity: 75%;}
 .budget img{width: 20px;}.profit img{width: 20px;}
 .budget{display: flex;align-items: center;margin-right: 10px;}.profit{display: flex;align-items: center;margin-right: 5px;}
 .movie-profit{display: flex;align-items: center;margin-top: 6px;}
- .profit p{margin: 0;font-size: 11px;font-family: sans-serif;font-weight: 400;margin-left: 4px;}
- .budget p{margin: 0;font-size: 11px;font-family: sans-serif;font-weight: 400;margin-left: 4px;}
+ .profit p{margin: 0;font-size: 11px;font-family: sans-serif;font-weight: 400;margin-left: 1px;}
+ .budget p{margin: 0;font-size: 11px;font-family: sans-serif;font-weight: 400;margin-left: 1px;}
 
 
 
