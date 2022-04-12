@@ -22,8 +22,8 @@ body{margin: 0;
 
 /* background: linear-gradient(0deg,#051c2b 20px,transparent); */
 .website-header{
-    /* background-color: var(--oxford-blue-header); */
-    background-color: hsl(218deg 100% 15%);
+    background-color: var(--oxford-blue-header);
+    /* background-color: hsl(218deg 100% 15%); */
 
     /* opacity: 80%; */
     /* box-shadow: 0 -1px 4px #1cd6ff; */
@@ -93,10 +93,11 @@ body{margin: 0;
 .ott-log img{height: 27px;opacity: 60%;width: 30px;}
 .main-two{margin: 0 2%;}
 .movie-section{display: flex;}
-.movie-poster{width: 140px;}
+.movie-poster{width: 130px;}
 .movie-poster img{width: 100%;object-fit: cover;opacity: 90%;}
-.movie-details{display: flex;flex-direction: column;padding: 7px;}
-.movie-details h1{font-size: 15px;font-family: 'Poppins', sans-serif;font-weight: 500;margin: 0;overflow: hidden;max-height: 26px;}
+.movie-details{display: flex;flex-direction: column;padding: 5px;max-width: 65%;}
+.movie-details h1{font-size: 15px;font-family: 'Poppins', sans-serif;font-weight: 500;margin: 0;overflow: hidden;max-height: 26px;text-overflow: ellipsis;
+    white-space: nowrap;}
 .movie-details h3{    margin: 0;font-size: 11px;font-family: sans-serif;font-weight: 400;margin-top: 7px;opacity: 75%;}
 .movie-details h5{    margin: 0;font-size: 11px;font-family: sans-serif;font-weight: 400;margin-top: 7px;opacity: 75%;}
 .span-div{margin-top: 5px;}
