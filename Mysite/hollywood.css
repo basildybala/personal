@@ -86,6 +86,7 @@ body{margin: 0;
     height: 20px;
     display: flex;
     align-items: center;
+    padding: 2px;
     justify-content: space-around;
 }
 .ott-log img{height: 27px;opacity: 60%;width: 30px;}
