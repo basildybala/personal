@@ -7,6 +7,7 @@
     --oxford-blue-header: hsl(218, 39%, 14%);
     --light-text:           hsl(214, 84%, 56%);
 }
+
 h1 h2 h3 h4 h5{
     margin: 0;padding: 0;
 }
@@ -49,9 +50,9 @@ body{margin: 0;
     color: #fff;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.6px;
-    overflow: hidden;
+    /* overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: nowrap; */
 }
 .website-logo span{
     color: var(--main-blue-color);
@@ -156,6 +157,54 @@ body{margin: 0;
 .movie-details h5{ font-size: 14px;margin-top: 10px;}
  }
 
+
+
+
+
+
+ .navbar-actions {
+    display: flex;
+    align-items: center;
+}
+.navbar-form {
+    position: relative;
+    margin-right: 50px;
+  }
+  
+  .navbar-form-search {
+    background: var(--oxford-blue);
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 15px;
+    color: var(--off-white);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-5);
+  }
+  
+  .navbar-form-btn {
+    background: var(--oxford-blue);
+    position: absolute;
+    top:   calc(50% - 10px);
+    right: 10px;
+  }
+  
+  .navbar-form-btn ion-icon,
+  .navbar-search-btn ion-icon {
+    font-size: 20px;
+    color: var(--light-azure);
+    --ionicon-stroke-width: 50px;
+  }
+  
+  .navbar-form-btn:hover ion-icon,
+  .navbar-form-search::placeholder { color: var(--off-white); }
+  
+  /**
+   * navbar-form close button & navbar search button
+   * for small device 
+   */
+  
+  .navbar-form-close,
+  .navbar-search-btn { display: none; }
 
 /*sticky ads*/
 /* .sticky-ad{position: sticky;bottom: 0;}
