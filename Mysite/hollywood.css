@@ -96,7 +96,7 @@ body{margin: 0;
 .movie-poster{width: 140px;}
 .movie-poster img{width: 100%;object-fit: cover;opacity: 90%;}
 .movie-details{display: flex;flex-direction: column;padding: 7px;}
-.movie-details h1{font-size: 16px;font-family: 'Poppins', sans-serif;font-weight: 500;margin: 0;}
+.movie-details h1{font-size: 15px;font-family: 'Poppins', sans-serif;font-weight: 500;margin: 0;overflow: hidden;max-height: 26px;}
 .movie-details h3{    margin: 0;font-size: 11px;font-family: sans-serif;font-weight: 400;margin-top: 7px;opacity: 75%;}
 .movie-details h5{    margin: 0;font-size: 11px;font-family: sans-serif;font-weight: 400;margin-top: 7px;opacity: 75%;}
 .span-div{margin-top: 5px;}
