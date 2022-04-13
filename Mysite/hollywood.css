@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@100;400&display=swap'); 
 :root {
     --main-bg-color:#050707;
     --main-blue-color:#1CD6FF;
@@ -158,6 +158,34 @@ body{margin: 0;
 }
 .swiper::-webkit-scrollbar{
     display: none;
+}
+.cast-swipe{
+    display: flex;
+}
+.cast{
+    width: 90px;
+    height: 170px;
+    margin: 5px;
+}
+.cast a{display: flex;flex-direction: column;align-items: center;}
+.cast a img{
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+}
+.cast a h4{
+    margin: 1px 0px;
+    font-family: 'Lato';
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+.cast a p{
+    margin: 1px 0px;
+    font-family: 'Lato';
+    font-size: 12px;
+    color: #fff;
+    font-weight: 300;
 }
 
 
