@@ -212,6 +212,25 @@ body{margin: 0;
     opacity: 60%;
     font-weight: 300;
     letter-spacing: 0.5px;
+    margin-left: 2px;
+}
+/*Images Section*/
+.images-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.images{
+   max-width: 100px;
+   height: auto;
+   margin: 10px;
+}
+.images a img{
+    width: 100%;
+    object-fit: cover;
+}
+.images-sub{display: flex;justify-content: space-between;align-items: center    ;}
+.images-sub a{
+    color: var(--light-text);
 }
 
 
