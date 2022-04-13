@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Orelega+One&family=PT+Sans+Narrow&family=Varela+Round&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@100;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather&family=Poppins:wght@100;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@100;400&display=swap');
 :root {
     --main-bg-color:#050707;
     --main-blue-color:#1CD6FF;
@@ -143,7 +142,7 @@ body{margin: 0;
 }
 .synopsis p{
     font-size: 12px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Lato', sans-serif;
     opacity: 75%;
     line-height: 22px;
     letter-spacing: 0.5px;
