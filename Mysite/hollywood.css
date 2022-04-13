@@ -36,6 +36,7 @@ body{margin: 0;
     /* justify-content:center ; */
     align-items: center;
     padding: 20px 10px;
+    position: relative;
 }
 .website-logo{
     display: flex;
@@ -133,7 +134,7 @@ body{margin: 0;
 }
 .synopsis h6{
     font-size: 12px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     opacity: 75%;
     line-height: 22px;
     letter-spacing: 0.5px;
@@ -142,7 +143,7 @@ body{margin: 0;
 }
 .synopsis p{
     font-size: 12px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     opacity: 75%;
     line-height: 22px;
     letter-spacing: 0.5px;
@@ -190,6 +191,28 @@ body{margin: 0;
     font-weight: 300;
     opacity: 70%;
 }
+/*MORE INFO MOVIE SEDCTION*/
+.more-info{
+    display: flex;
+    align-items: center;
+    margin: 7px 0;
+}
+.more-info h4{
+    margin: 0;
+    font-family: 'Lato';
+    font-size: 13Px;
+    opacity: 80%;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+.more-info p{
+    margin: 0;
+    font-family: 'Lato';
+    font-size: 13Px;
+    opacity: 60%;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
 
 
 
@@ -229,6 +252,79 @@ body{margin: 0;
     .movie-details h3{ font-size: 14px;margin-top: 15px;}
 .movie-details h5{ font-size: 14px;margin-top: 10px;}
  }
+
+/*SEarch Button*/
+
+ .search-box {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    display: flex;
+    align-items: center;
+    /* transform: translate(-50%, -0%); */
+    padding: 10px;
+    border-radius: 40px;
+    height: 40px;
+    right: 10px;
+    position: absolute;
+    /* background: #e9edf1; */
+    /* background: var(--rich-black); */
+  }
+  
+  .search-box:hover .search-txt {
+    width: 150px;
+    padding: 0 6px;
+  }
+  
+  .search-box:hover .search-btn {
+    /* background: #fff; */
+    background: var(--rich-black);
+  }
+  
+  .search-txt {
+    border: none;
+    /* background: #fff; */
+    background: var(--rich-black);
+    outline: none;
+    padding: 0;
+    color: #fff;
+    opacity: 90%;
+    transition: 0.5s;
+    font-size: 1rem;
+    width: 0px;
+    height: 40px;
+  }
+  
+  .search-btn {
+    color: var(--light-text);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 50%; */
+    transition: 0.5s;
+  }
+  .search-btn i{
+      font-size: 26px;
+  }
+  .search-icon{
+      font-size: 20px;
+      font-weight: bold;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
