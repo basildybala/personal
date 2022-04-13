@@ -182,6 +182,11 @@ body{margin: 0;
     color: #fff;
     font-weight: 400;
     opacity: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 87px;
+    text-align: center;
 }
 .cast a p{
     margin: 1px 0px;
@@ -190,6 +195,11 @@ body{margin: 0;
     color: #fff;
     font-weight: 300;
     opacity: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 87px;
+    text-align: center;
 }
 /*MORE INFO MOVIE SEDCTION*/
 .more-info{
@@ -231,6 +241,11 @@ body{margin: 0;
 .images-sub{display: flex;justify-content: space-between;align-items: center    ;}
 .images-sub a{
     color: var(--light-text);
+    margin: 5px 0;
+    font-size: 15px;
+    font-family: poppins;
+    letter-spacing: .8px;
+    font-weight: 500;
 }
 
 
@@ -256,6 +271,9 @@ body{margin: 0;
     .movie-details h1{font-size: 18px;}
 .movie-details h3{ font-size: 13px;margin-top: 14px;}
 .movie-details h5{ font-size: 13px;margin-top: 9px;}
+.cast{width: 110px;height: 200px;margin: 7px;}
+    .cast a{display: flex;flex-direction: column;align-items: center;}
+    .cast a img{width: 100%;height: 160px;}
  }
 
  @media screen and (min-width: 720px) {
@@ -269,7 +287,23 @@ body{margin: 0;
     .movie-details h1{font-size: 20px;}
     .movie-poster{width: 220px;}
     .movie-details h3{ font-size: 14px;margin-top: 15px;}
-.movie-details h5{ font-size: 14px;margin-top: 10px;}
+    .movie-details h5{ font-size: 14px;margin-top: 10px;}
+    /*MORE INFO*/
+    .more-info{margin: 15px 0;}
+    .more-info h4{font-size: 16Px;opacity: 90%;font-weight: 400;letter-spacing: 0.6px;}
+    .more-info p{font-size: 16Px;opacity: 75%;font-weight: 400;letter-spacing: 0.5px; margin-left: 4px;}
+    /*Cast*/
+    .cast{width: 150px;height: 240px;margin: 10px;}
+    .cast a{display: flex;flex-direction: column;align-items: center;}
+    .cast a img{width: 100%;height: 205px;}
+    .cast a h4{font-size: 15px;}
+    .cast a p{font-size: 13px;}
+    /*Images*/
+    .images{
+        max-width: 150px;
+        height: auto;
+        margin: 15px;
+     }
  }
 
 /*SEarch Button*/
