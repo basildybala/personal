@@ -247,6 +247,8 @@ body{margin: 0;
     letter-spacing: .8px;
     font-weight: 500;
 }
+.video-row{display: flex;align-items: center;justify-content: center;}
+.video-row iframe{width: 300PX;}
 
 
 
@@ -274,6 +276,7 @@ body{margin: 0;
 .cast{width: 110px;height: 200px;margin: 7px;}
     .cast a{display: flex;flex-direction: column;align-items: center;}
     .cast a img{width: 100%;height: 160px;}
+    .video-row iframe{width: 350PX;}
  }
 
  @media screen and (min-width: 720px) {
@@ -304,6 +307,7 @@ body{margin: 0;
         height: auto;
         margin: 15px;
      }
+     .video-row iframe{width: 600PX;height: 280px;}
  }
 
 /*SEarch Button*/
