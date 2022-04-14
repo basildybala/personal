@@ -250,7 +250,7 @@ body{margin: 0;
 /*Videos*/
 .video-row{display: flex;align-items: center;justify-content: center;}
 .video-row iframe{width: 300PX;}
-.video-player video{width: 320px;height: 600px;}
+.video-player {display: flex;justify-content: center;}
 
 
 
