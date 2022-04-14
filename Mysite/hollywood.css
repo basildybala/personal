@@ -205,7 +205,7 @@ body{margin: 0;
 .more-info{
     display: flex;
     align-items: center;
-    margin: 7px 0;
+    margin: 9px 0;
 }
 .more-info h4{
     margin: 0;
@@ -247,8 +247,10 @@ body{margin: 0;
     letter-spacing: .8px;
     font-weight: 500;
 }
+/*Videos*/
 .video-row{display: flex;align-items: center;justify-content: center;}
 .video-row iframe{width: 300PX;}
+.video-player video{width: 320px;height: 600px;}
 
 
 
