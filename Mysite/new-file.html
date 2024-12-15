@@ -415,7 +415,32 @@
                 </div>
             </div>
     </div>
-    
+    <!-----------New review section-------------------------->
+    <div class="other-sec" id="review">
+        <div class="left-blue-header">
+            <h2>Reviews</h2>
+            <a href="/drama/write-review/<%= movie._id%>">Write Review</a>
+        </div>
+        <div class="swiper">
+            <did class="review-swiper">
+                <div class="review-new-section">
+                    <div class="new-review-header">
+                        <div class="new-review-user-dettails">
+                            <a href="/user/profile/<%= review[i].userDettails[0]._id %>" class="new-review-user-pic">
+                                <img data-src="./biju.jpg" class="lazy-photo" alt="User Profile pic">
+                            </a>
+                            <div class="user-name">
+                                <a href="/user/profile/<%= review[i].userDettails[0]._id %>">Fahad</a>
+                                <p><span>5</span> people liked this review</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-review-middle"></div>
+                    <div class="new-review-bottom"></div>
+                </div>
+            </did>
+        </div>
+    </div>    
     <div class="di">
 
     </div>
