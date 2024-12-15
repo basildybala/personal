@@ -1240,17 +1240,16 @@ hr{
     overflow: hidden;
     width: 80%;
     padding: 10px 15px;
+    flex-direction: column;
 }
 .new-review-user-dettails{
     display: flex;
+    align-items: center;
 }
 .new-review-user-dettails a{
     color: #211818;
 }
-.new-review-header{
-    height: 25%;
-    
-}
+
 .new-review-user-pic{
     width: 40px;
     height: 40px;
@@ -1274,13 +1273,33 @@ hr{
     font-weight: 600;
 }
 .new-review-user-name p{
-    margin-top: 4px;
+    margin-top: 2px;
     color:#211818 ;
     text-decoration: none;
     font-size: 10px;
 }
 .new-review-user-name p span{
 font-weight: bold;
+}
+.new-review-dettails{
+    display: flex;
+    height: auto;
+}
+.new-review-text h3{
+    margin: 12px 0px 6px 0px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #211818;
+}
+.new-review-text p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: lato,Helvetica,Arial,sans-serif;
+    color: #211818;
+    line-height: 1.3rem;
+    letter-spacing: 0.3px;
 }
 
   @media(min-width: 767px) {
