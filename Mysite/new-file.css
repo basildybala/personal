@@ -388,6 +388,17 @@
 }
 .dislike form button {
     margin-right: 4px;
+    background-color: #211818;
+}
+.like form button {
+    margin-right: 4px;
+    background-color: #211818;
+}
+.dislike form button i{
+    color: white;
+}
+.like form button i{
+    color: white;
 }
 .review-dettails{
     display: flex;
