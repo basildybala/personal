@@ -1249,7 +1249,7 @@ hr{
     border: 1px solid hsla(210, 8%, 51%, .13);
     background-color: #f8f8f8;
     overflow: hidden;
-    width: 80%;
+    width: 260px;
     padding: 10px 15px;
     flex-direction: column;
 }

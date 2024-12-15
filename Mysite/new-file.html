@@ -468,10 +468,61 @@
                 
                                 </div>
                             </div>
-
                         </div>   
                     </div>
                 </div>
+                
+            </did>
+            <did class="review-swiper">
+                <div class="review-new-section">
+                    <div class="new-review-header">
+                        <div class="new-review-user-dettails">
+                            <a href="/user/profile/<%= review[i].userDettails[0]._id %>" class="new-review-user-pic">
+                                <img data-src="./biju.jpg" class="lazy-photo" alt="User Profile pic">
+                            </a>
+                            <div class="new-review-user-name">
+                                <a href="/user/profile/<%= review[i].userDettails[0]._id %>">Fahad</a>
+                                <p><span>5</span> people liked this review</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-review-middle">
+                        <div class="new-review-dettails">
+                            <div class="new-review-text">
+                                <h3>Nice story about to start</h3>
+                                <p style="font-family: PingFangSC-Regular, Tahoma, Microsoft Yahei, sans-serif;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam voluptas ipsum consequuntur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="new-review-bottom">
+                        <hr>
+                        <div class="review-rating-section">
+                            <div><h4>Story</h4><p><i class="fa-solid fa-star"></i>5/10</p></div>
+                            <div><h4>Cast</h4><p><i class="fa-solid fa-star"></i>7/10</p></div>
+                            <div><h4>Overall</h4><p> <i class="fa-solid fa-star"></i>10/10</p></div>
+                            <div style="flex-direction: row;align-items: center;">
+
+                                <div class="like">
+                                    <form id="like-form" action="/drama/like-review" method="post">
+                                    <input type="text" value="<%= movie._id%>" name="movieId" hidden>
+                                    <input type="text" value="<%= review[i].userDettails[0]._id %>" name="reviewUserId" hidden>
+                                    <button type="submit"><i class="fa-solid fa-thumbs-up"></i></button>
+                                </form>
+                                </div>
+                                <div class="dislike">
+                                    <form id="unlike-form" action="/drama/dislike-review" method="post">
+                                        <input type="text" value="<%= movie._id%>" name="movieId" hidden>
+                                        <input type="text" value="<%= review[i].userDettails[0]._id %>" name="reviewUserId" hidden>
+                                        <button type="submit"><i class="fa-solid fa-thumbs-down"></i></button>
+                                    </form>
+                
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                
             </did>
         </div>
     </div>    
