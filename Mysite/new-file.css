@@ -396,9 +396,11 @@
 }
 .dislike form button i{
     color: white;
+    line-height: 10px;
 }
 .like form button i{
     color: white;
+    line-height: 10px;
 }
 .review-dettails{
     display: flex;
@@ -1345,6 +1347,23 @@ font-weight: bold;
 .review-rating-section div i{
     font-size: 10px;
     margin-right: 2px;
+    
+}
+.dislike form button {
+    margin-right: 4px;
+    background-color: #211818;
+}
+.like form button {
+    margin-right: 4px;
+    background-color: #211818;
+}
+.dislike form button i{
+    color: white;
+    line-height: 10px;
+}
+.like form button i{
+    color: white;
+    line-height: 10px;
 }
 .new-review-header{
     flex: 1;
