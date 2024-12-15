@@ -100,7 +100,10 @@
 //     ul.querySelectorAll("li").forEach(li => li.remove());
 //     countTags();
 // });
-
+//LAZY LOAD
+const myLazyLoad= new LazyLoad ({
+  elements_selector:".lazy-photo"
+});
 
 // variables for navbar menu toggle
 const header = document.querySelector('header');
