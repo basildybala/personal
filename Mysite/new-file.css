@@ -509,13 +509,15 @@
     color: #007bffd9;
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
-    padding: 4px 4px;
+    padding: 4px 8px;
     -webkit-box-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     align-items: center;
     display: flex;
     margin-left: 4px;
+    font-family: sans-serif;
+    font-size: 15px;
 }
 
 
@@ -561,7 +563,7 @@ font-family:'Poppins', sans-serif;
 }
 .form-control-rate{
     display: block;
-    width: 55%;
+    width: 49%;
     height: 20px;
     font-size: 1rem;
     line-height: 1.5;
