@@ -1351,18 +1351,20 @@ font-weight: bold;
 }
 .dislike form button {
     margin-right: 4px;
-    background-color: #211818;
+    background-color: #f8f8f8;
+    border: #f8f8f8;
 }
 .like form button {
     margin-right: 4px;
-    background-color: #211818;
+    background-color: #f8f8f8;
+    border: #f8f8f8;
 }
 .dislike form button i{
-    color: white;
+    color: black;
     line-height: 10px;
 }
 .like form button i{
-    color: white;
+    color: black;
     line-height: 10px;
 }
 .new-review-header{
@@ -1370,6 +1372,7 @@ font-weight: bold;
 }
 .new-review-middle{
     flex:5;
+    overflow: hidden;
 }
 .new-review-bottom{
     flex: 1;
