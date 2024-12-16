@@ -1247,7 +1247,7 @@ hr{
 }
 .review-new-section{
     display: flex;
-    height: 280px;
+    height: 300px;
     border: 1px solid hsla(210, 8%, 51%, .13);
     background-color: #f8f8f8;
     overflow: hidden;
