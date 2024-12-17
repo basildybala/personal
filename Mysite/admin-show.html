@@ -2,101 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleee.css">
-    <title>Document</title>
+    <title>Header with Sort Dropdown</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Blue Header */
+        .blue-header {
+            width: 100%;
+            height: 35px; /* Fixed height */
+            background-color: #4fa0f7; /* Blue color */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 15px;
+            color: white;
+        }
+
+        /* Heading */
+        .blue-header h1 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Sort Button */
+        .sort-container {
+            position: relative; /* For dropdown positioning */
+        }
+
+        .sort-button {
+            background-color: #ffffff;
+            color: #4fa0f7;
+            border: none;
+            border-radius: 5px;
+            padding: 4px 8px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .sort-button:hover {
+            background-color: #e3f2fd;
+        }
+
+        /* Dropdown Menu */
+        .dropdown-menu {
+            display: none; /* Initially hidden */
+            position: absolute;
+            right: 0;
+            top: 30px; /* Position below the button */
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        .dropdown-menu button {
+            background: none;
+            border: none;
+            color: #333;
+            padding: 8px 12px;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .dropdown-menu button:hover {
+            background-color: #e3f2fd;
+            color: #0073e6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .blue-header {                height: auto;
+                padding: 5px;
+            }
+
+            .blue-header h1 {
+                margin-bottom: 5px;
+            }
+
+            .dropdown-menu {
+                top: 40px; /* Adjust for smaller screens */
+            }
+        }
+    </style>
 </head>
 <body>
-    
-<table style="width:100%;text-align:left">
-    <tr >
-      <th class="admin-header">Actor Name</th>
-      <th class="admin-header"> Language</th>
-      <th class="admin-header"> ID</th>
-      <th class="admin-header"> Options</th>
-    </tr>
-    
-    <tr>
-        <td class="td-class">{{this.name}}</td>
-        <td class="td-class">{{this.category}}</td>
-         <td class="td-class"><input style="width: 90%;" type="text" value="876787686786453ws5j6dh"> </td>
-        <td class="td-class">
-          
-            <a style="color: green;" href="/admin/edit-movies/{{this._id}}"> Edit</a>
-            <a href="/admin/delete-movies/{{this._id}}" onclick="return confirm('Are You SHure to Delete = {{this.actorname}}')">Delete</a>
-            
-            </td>
-      </tr>
-      <tr>
-        <td class="td-class">{{this.name}}</td>
-        <td class="td-class">{{this.category}}</td>
-         <td class="td-class"><input style="width: 90%;" type="text" value="876787686786453ws5j6dh"> </td>
-        <td class="td-class">
-          
-            <a style="color: green;" href="/admin/edit-movies/{{this._id}}"> Edit</a>
-            <a href="/admin/delete-movies/{{this._id}}" onclick="return confirm('Are You SHure to Delete = {{this.actorname}}')">Delete</a>
-            
-            </td>
-      </tr>
 
-      <tr>
-        <td class="td-class">{{this.name}}</td>
-        <td class="td-class">{{this.category}}</td>
-         <td class="td-class"><input style="width: 90%;" type="text" value="876787686786453ws5j6dh"> </td>
-        <td class="td-class">
-          
-            <a style="color: green;" href="/admin/edit-movies/{{this._id}}"> Edit</a>
-            <a href="/admin/delete-movies/{{this._id}}" onclick="return confirm('Are You SHure to Delete = {{this.actorname}}')">Delete</a>
-            
-            </td>
-      </tr>
-      <tr>
-        <td class="td-class">{{this.name}}</td>
-        <td class="td-class">{{this.category}}</td>
-         <td class="td-class"><input style="width: 90%;" type="text" value="876787686786453ws5j6dh"> </td>
-        <td class="td-class">
-          
-            <a style="color: green;" href="/admin/edit-movies/{{this._id}}"> Edit</a>
-            <a href="/admin/delete-movies/{{this._id}}" onclick="return confirm('Are You SHure to Delete = {{this.actorname}}')">Delete</a>
-            
-            </td>
-      </tr>
-      <tr>
-        <td class="td-class">{{this.name}}</td>
-        <td class="td-class">{{this.category}}</td>
-         <td class="td-class"><input style="width: 90%;" type="text" value="876787686786453ws5j6dh"> </td>
-        <td class="td-class">
-          
-            <a style="color: green;" href="/admin/edit-movies/{{this._id}}"> Edit</a>
-            <a href="/admin/delete-movies/{{this._id}}" onclick="return confirm('Are You SHure to Delete = {{this.actorname}}')">Delete</a>
-            
-            </td>
-      </tr>
-      <tr>
-        <td class="td-class">{{this.name}}</td>
-        <td class="td-class">{{this.category}}</td>
-         <td class="td-class"><input style="width: 90%;" type="text" value="876787686786453ws5j6dh"> </td>
-        <td class="td-class">
-          
-            <a style="color: green;" href="/admin/edit-movies/{{this._id}}"> Edit</a>
-            <a href="/admin/delete-movies/{{this._id}}" onclick="return confirm('Are You SHure to Delete = {{this.actorname}}')">Delete</a>
-            
-            </td>
-      </tr>
-      <tr>
-        <td class="td-class">{{this.name}}</td>
-        <td class="td-class">{{this.category}}</td>
-         <td class="td-class"><input style="width: 90%;" type="text" value="876787686786453ws5j6dh"> </td>
-        <td class="td-class">
-          
-            <a style="color: green;" href="/admin/edit-movies/{{this._id}}"> Edit</a>
-            <a href="/admin/delete-movies/{{this._id}}" onclick="return confirm('Are You SHure to Delete = {{this.actorname}}')">Delete</a>
-            
-            </td>
-      </tr>
-    
-    
-  </table>
+    <!-- Blue Header Section -->
+    <div class="blue-header">
+        <!-- Header Title -->
+        <div class="blue-header-heading">
+          <h1>Korean Dramas</h1>
+        </div>
+
+        <!-- Sort Button -->
+        <div class="sort-container">
+            <button class="sort-button" onclick="toggleDropdown()">Sort</button>
+            <!-- Dropdown Menu -->
+            <div class="dropdown-menu" id="dropdownMenu">
+                <button onclick="sortBy('year')">Year</button>
+                <button onclick="sortBy('release')">Release Date</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to toggle dropdown visibility
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Placeholder function for sorting logic
+        function sortBy(type) {
+            alert(`Sorting by ${type}`);
+            // Add your sorting logic here
+            toggleDropdown(); // Close dropdown after selection
+        }
+
+        // Close dropdown when clicking outside
+        window.addEventListener('click', function(event) {
+            const dropdown = document.getElementById('dropdownMenu');
+            const button = document.querySelector('.sort-button');
+            if (!dropdown.contains(event.target) && event.target !== button) {
+                dropdown.style.display = 'none';
+            }
+        });
+    </script>
+
 </body>
 </html>
