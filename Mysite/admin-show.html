@@ -5,14 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header with Sort Dropdown</title>
     <style>
-        /* General Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
+       
         /* Blue Header */
         .blue-header {
             width: 100%;
@@ -26,9 +19,10 @@
         }
 
         /* Heading */
-        .blue-header h1 {
+        .blue-header-heading h1 {
             font-size: 16px;
             font-weight: bold;
+            font-family: 'Varela Round', sans-serif;
         }
 
         /* Sort Button */
@@ -86,8 +80,9 @@
                 padding: 5px;
             }
 
-            .blue-header h1 {
-                margin-bottom: 5px;
+            .blue-header-heading h1 {
+                margin: 0px;
+
             }
 
             .dropdown-menu {
@@ -107,7 +102,7 @@
 
         <!-- Sort Button -->
         <div class="sort-container">
-            <button class="sort-button" onclick="toggleDropdown()">Sort</button>
+            <button class="sort-button" onclick="toggleDropdown()">Sort By</button>
             <!-- Dropdown Menu -->
             <div class="dropdown-menu" id="dropdownMenu">
                 <button onclick="sortBy('year')">Year</button>
